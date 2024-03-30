@@ -1,0 +1,47 @@
+﻿# CMakeList.txt : Top-level CMake project file, do global configuration
+# and include sub-projects here.
+#
+cmake_minimum_required (VERSION 3.8)
+
+# Enable Hot Reload for MSVC compilers if supported.
+if (POLICY CMP0141)
+  cmake_policy(SET CMP0141 NEW)
+  set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
+endif()
+
+project ("UriOnlineJudge")
+
+# Include sub-projects.
+add_subdirectory ("1000")
+add_subdirectory ("1001")
+add_subdirectory ("1002")
+add_subdirectory ("1003")
+add_subdirectory ("1004")
+add_subdirectory ("1005")
+add_subdirectory ("1006")
+add_subdirectory ("1007")
+add_subdirectory ("1008")
+add_subdirectory ("1009")
+add_subdirectory ("1010")
+add_subdirectory ("1011")
+add_subdirectory ("1012")
+add_subdirectory ("1013")
+add_subdirectory ("1014")
+add_subdirectory ("1015")
+add_subdirectory ("1016")
+add_subdirectory ("1017")
+add_subdirectory ("1018")
+add_subdirectory ("1019")
+add_subdirectory ("1020")
+add_subdirectory ("1021")
+add_subdirectory ("1035")
+add_subdirectory ("1036")
+add_subdirectory ("1037")
+add_subdirectory ("1038")
+add_subdirectory ("1042")
+add_subdirectory ("1043")
+add_subdirectory ("1044")
+add_subdirectory ("1049")
+add_subdirectory ("1050")
+add_subdirectory ("1273")
+add_subdirectory ("1278")
