@@ -49,7 +49,7 @@ int main(int argv, char** argc) {
                 j--;
             }
         }
-        printf("%u\n", numUltrapassagens);
+        (void)printf("%u\n", numUltrapassagens);
     }
     return 0;
 }

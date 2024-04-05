@@ -26,7 +26,7 @@ int main(int argv, char** argc) {
                 }
                 numHabitantes--;
             }
-            printf("%d\n", trabalho);
+            (void)printf("%d\n", trabalho);
         } else {
             instancia = 0;
         }

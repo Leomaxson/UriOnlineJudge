@@ -68,7 +68,7 @@ int main(int argv, char** argc) {
             ptrTag = strstr(ptrTexto, tag);
         }
         strcpy(ptrSaida, ptrTextoOriginal);
-        printf("%s", saida);
+        (void)printf("%s", saida);
     }
     return 0;
 }

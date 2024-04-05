@@ -15,7 +15,7 @@ int main(int argv, char** argc) {
     scanf("%d", &instancias);
     while(instancias) {
         scanf("%d", &fib);
-        printf("fib(%d) = %d calls = %d\n", fib, calls[fib], fibs[fib]);
+        (void)printf("fib(%d) = %d calls = %d\n", fib, calls[fib], fibs[fib]);
         instancias--;
     }
     return 0;

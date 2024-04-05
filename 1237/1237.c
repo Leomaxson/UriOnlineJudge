@@ -90,7 +90,7 @@ int main(int argv, char** argc) {
                 break;
             }
         }
-        printf("%u\n", maior_substring);
+        (void)printf("%u\n", maior_substring);
     }
     return 0;
 }

@@ -14,7 +14,7 @@ int main(int argv, char** argc) {
         scanf("%u %u", &min, &max);
         // Imprime a ida.
         for(i = min; i <= max; i++) {
-            printf("%u", i);
+            (void)printf("%u", i);
         }
         // Imprime a volta.
         for(i = max; i >= min; i--) {
@@ -35,9 +35,9 @@ int main(int argv, char** argc) {
                 tamNum--;
             }
             // Imprime o número invertido.
-            printf("%s", buffer);
+            (void)printf("%s", buffer);
         }
-        printf("\n");
+        (void)printf("\n");
         numInstancias--;
     }
     return 0;

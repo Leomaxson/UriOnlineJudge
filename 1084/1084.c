@@ -58,7 +58,7 @@ int main(int argv, char** argc) {
             pos++;
         }
         numero[i] = '\0';
-        printf("%s\n", numero);
+        (void)printf("%s\n", numero);
     }
     return 0;
 }

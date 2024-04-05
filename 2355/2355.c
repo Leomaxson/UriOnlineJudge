@@ -26,7 +26,7 @@ int main(int argv, char** argc) {
             golsAlemanha++;
         }
         // Imprime o resultado da instância.
-        printf("Brasil %u x Alemanha %u\n", golsBrasil, golsAlemanha);
+        (void)printf("Brasil %u x Alemanha %u\n", golsBrasil, golsAlemanha);
         // Lê o tempo da próxima instância.
         scanf("%u", &tempo);
     }

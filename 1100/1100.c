@@ -137,7 +137,7 @@ int main(int argv, char** argc) {
             }
         }
         // Imprime a distância da posição final.
-        printf("To get from %s to %s takes %d knight moves.\n", inicio, termino, tabuleiro[posTermino.Linha][posTermino.Coluna]);
+        (void)printf("To get from %s to %s takes %d knight moves.\n", inicio, termino, tabuleiro[posTermino.Linha][posTermino.Coluna]);
     }
     return 0;
 }

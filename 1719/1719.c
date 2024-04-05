@@ -96,7 +96,7 @@ int main(int argv, char** argc) {
                     break;
             }
         }
-        printf("%s\n", leitura);
+        (void)printf("%s\n", leitura);
     }
     return 0;
 }

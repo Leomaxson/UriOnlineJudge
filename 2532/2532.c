@@ -58,9 +58,9 @@ int main(int argv, char** argc) {
         navegaArvoreBusca(&controle, 0);
         // Verifica o resultado.
         if(controle.MinMana == INT_MAX) {
-            printf("-1\n");
+            (void)printf("-1\n");
         } else {
-            printf("%d\n", controle.MinMana);
+            (void)printf("%d\n", controle.MinMana);
         }
         // Desaloca a memória.
         free(controle.ManaMagia);

@@ -31,7 +31,7 @@ int main(int argv, char** argc) {
             numPicos++;
         }
         // Imprime a resposta.
-        printf("%u\n", numPicos);
+        (void)printf("%u\n", numPicos);
         // Lê o tamanho da próxima instância.
         scanf("%u", &numAmostras);
     }

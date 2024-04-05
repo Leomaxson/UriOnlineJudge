@@ -24,7 +24,7 @@ int main(int argv, char** argc) {
     }
 
     for(i = 0; i < instancias; i++) {
-        printf("Mary won %u times and John won %u times\n", maria[i], joao[i]);
+        (void)printf("Mary won %u times and John won %u times\n", maria[i], joao[i]);
     }
     return 0;
 }

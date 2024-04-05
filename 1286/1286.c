@@ -40,7 +40,7 @@ int main(int argv, char** argc) {
         }
         // Calcula o problema da mochila 0-1 para os pedidos.
         i = problemaMochila(maxPizzas, numPizzas, tempoEntrega, numPedidos);
-        printf("%d min.\n", i);
+        (void)printf("%d min.\n", i);
         // Lê o tamanho da próxima instância.
         scanf("%d", &numPedidos);
     }

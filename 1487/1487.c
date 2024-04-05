@@ -40,7 +40,7 @@ int main(int argv, char** argc) {
         // Encontra a maior pontuação possível.
         pontuacao = resolveMochilaIlimitada(tempoDisponivel, numAtracoes, pontosAtracoes, tempoAtracoes);
         // Imprime o resultado.
-        printf("Instancia %d\n%d\n\n", instancia, pontuacao);
+        (void)printf("Instancia %d\n%d\n\n", instancia, pontuacao);
         // Lê a próxima instância.
         scanf("%d %d", &numAtracoes, &tempoDisponivel);
         instancia++;

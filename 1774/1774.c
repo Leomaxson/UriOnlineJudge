@@ -68,6 +68,6 @@ int main(int argv, char** argc) {
         }
         i++;
     }
-    printf("%d\n", pesoAGM);
+    (void)printf("%d\n", pesoAGM);
     return 0;
 }

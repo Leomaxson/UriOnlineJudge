@@ -14,31 +14,31 @@
 void printNomeCidade(int ddd) {
     switch(ddd) {
         case DDD_BRASILIA:
-            printf("Brasilia\n");
+            (void)printf("Brasilia\n");
             break;
         case DDD_SALVADOR:
-            printf("Salvador\n");
+            (void)printf("Salvador\n");
             break;
         case DDD_SAO_PAULO:
-            printf("Sao Paulo\n");
+            (void)printf("Sao Paulo\n");
             break;
         case DDD_RIO_DE_JANEIRO:
-            printf("Rio de Janeiro\n");
+            (void)printf("Rio de Janeiro\n");
             break;
         case DDD_JUIZ_DE_FORA:
-            printf("Juiz de Fora\n");
+            (void)printf("Juiz de Fora\n");
             break;
         case DDD_CAMPINAS:
-            printf("Campinas\n");
+            (void)printf("Campinas\n");
             break;
         case DDD_VITORIA:
-            printf("Vitoria\n");
+            (void)printf("Vitoria\n");
             break;
         case DDD_BELO_HORIZONTE:
-            printf("Belo Horizonte\n");
+            (void)printf("Belo Horizonte\n");
             break;
         default:
-            printf("DDD nao cadastrado\n");
+            (void)printf("DDD nao cadastrado\n");
             break;
     }
 }

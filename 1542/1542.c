@@ -27,9 +27,9 @@ int main(int argv, char** argc) {
         scanf("%u", &p);
         x = (d * q * p) / (p - q);
         if(x == 1) {
-            printf("1 pagina\n");
+            (void)printf("1 pagina\n");
         } else {
-            printf("%u paginas\n", x);
+            (void)printf("%u paginas\n", x);
         }
     }
     return 0;

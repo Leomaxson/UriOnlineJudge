@@ -91,7 +91,7 @@ int main(int argv, char** argc) {
                 }
                 i++;
             }
-            printf("%d\n", pesoTotal - pesoAGM);
+            (void)printf("%d\n", pesoTotal - pesoAGM);
         }
     } while(numVertices || numArestas);
     free(vertices);

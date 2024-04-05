@@ -28,7 +28,7 @@ int main(int argv, char** argc) {
                 numElementosNaoTrocados++;
             }
         }
-        printf("%u\n", numElementosNaoTrocados);
+        (void)printf("%u\n", numElementosNaoTrocados);
         numInstancias--;
     }
     return 0;

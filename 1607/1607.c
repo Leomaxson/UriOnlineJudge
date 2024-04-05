@@ -25,7 +25,7 @@ int main(int argv, char** argc) {
             operacoes += aux;
             i++;
         }
-        printf("%u\n", operacoes);
+        (void)printf("%u\n", operacoes);
         instancias--;
     }
     return 0;

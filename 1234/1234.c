@@ -30,7 +30,7 @@ int main(int argv, char** argc) {
             i++;
         }
         // Imprime a sentença modificada.
-        printf("%s", sentenca);
+        (void)printf("%s", sentenca);
     }
     return 0;
 }

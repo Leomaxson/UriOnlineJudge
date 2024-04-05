@@ -40,7 +40,7 @@ int main(int argv, char** argc) {
         for(i = 0; i < numVertices; i++) {
             componentes[i] = NormalizaComponente(componentes, i);
         }
-        printf("Case #%d:\n", instancia);
+        (void)printf("Case #%d:\n", instancia);
         // Imprime os componentes.
         numLidos = 0;
         numComponentes = 0;
@@ -55,15 +55,15 @@ int main(int argv, char** argc) {
             // Imprime os vértices do componente.
             for(i = 0; i < numVertices; i++) {
                 if(componentes[i] == vertice) {
-                    printf("%c,", i + 'a');
+                    (void)printf("%c,", i + 'a');
                     numLidos++;
                     lidos[i] = 1;
                 }
             }
-            printf("\n");
+            (void)printf("\n");
             numComponentes++;
         }
-        printf("%u connected components\n\n", numComponentes);
+        (void)printf("%u connected components\n\n", numComponentes);
         instancia++;
         numInstancias--;
     }

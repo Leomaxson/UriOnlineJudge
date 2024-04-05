@@ -9,7 +9,7 @@ int main(int argv, char** argc) {
     b = 2;
     c = 3;
     while(num_linhas) {
-        printf("%u %u %u PUM\n", a, b, c);
+        (void)printf("%u %u %u PUM\n", a, b, c);
         a += 4;
         b += 4;
         c += 4;

@@ -119,7 +119,7 @@ int main(int argv, char** argc) {
         }
         // Com a matriz de distâncias definida, calcula o tamanho da árvore geradora mínima para 
         // o grafo completo gerado.
-        printf("%.2lf\n", CalculaTamanhoAGM(&grafo));
+        (void)printf("%.2lf\n", CalculaTamanhoAGM(&grafo));
         free(posX);
         free(posY);
         Grafo_Destroi(&grafo);

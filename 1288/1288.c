@@ -54,9 +54,9 @@ int main(int argv, char** argc) {
         // Calcula o problema da mochila inteira e verifica o resultado.
         resultado = problemaMochila(capacidadeCanhao, pesosProjeteis, danosProjeteis, numProjeteis);
         if(resultado < resistenciaCastelo) {
-            printf("Falha na missao\n");
+            (void)printf("Falha na missao\n");
         } else {
-            printf("Missao completada com sucesso\n");
+            (void)printf("Missao completada com sucesso\n");
         }
         // Desaloca a memória.
         free(danosProjeteis);

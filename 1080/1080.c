@@ -24,7 +24,7 @@ int main(int argv, char** argc) {
     }
 
     posicaoMaior++;
-    printf("%u\n", maior);
-    printf("%u\n", posicaoMaior);
+    (void)printf("%u\n", maior);
+    (void)printf("%u\n", posicaoMaior);
     return 0;
 }

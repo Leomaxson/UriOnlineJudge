@@ -37,16 +37,16 @@ int main(int argv, char** argc) {
                     j++;
                 }
                 if(primeiro) {
-                    printf("%c:%c", i + MENOR_LETRA, j + MENOR_LETRA - 1);
+                    (void)printf("%c:%c", i + MENOR_LETRA, j + MENOR_LETRA - 1);
                     primeiro = 0;
                 } else {
-                    printf(", %c:%c", i + MENOR_LETRA, j + MENOR_LETRA - 1);
+                    (void)printf(", %c:%c", i + MENOR_LETRA, j + MENOR_LETRA - 1);
                 }
                 i = j;
             }
             i++;
         }
-        printf("\n");
+        (void)printf("\n");
     }
     return 0;
 }

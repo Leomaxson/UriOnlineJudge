@@ -21,6 +21,6 @@ int main(int argv, char** argc) {
         }
         x++;
     }
-    printf("%d\n", contagem);
+    (void)printf("%d\n", contagem);
     return 0;
 }

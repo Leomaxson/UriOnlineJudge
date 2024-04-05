@@ -28,14 +28,14 @@ int main(int argv, char** argc) {
             numInversoes--;
         }
         // Imprime o número do caso de teste.
-        printf("Genome %u\n", casoTeste);
+        (void)printf("Genome %u\n", casoTeste);
         // Lê a quantidade de consultas e escreve a resposta para cada uma delas.
         scanf("%u", &numConsultas);
         while(numConsultas) {
             scanf("%u", &aux);
             for(i = 1; i <= numGenes; i++) {
                 if(genes[i] == aux) {
-                    printf("%u\n", i);
+                    (void)printf("%u\n", i);
                     break;
                 }
             }

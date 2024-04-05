@@ -163,7 +163,7 @@ int main(int argv, char** argc) {
         // Destroi a fila.
         Fila_Destroi(&fila);
         // Imprime a resposta da maior distância.
-        printf("%d\n", maiorDistancia);
+        (void)printf("%d\n", maiorDistancia);
         // Lê os tamanhos da próxima instância.
         scanf("%d %d", &numLinhas, &numColunas);
     }

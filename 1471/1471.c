@@ -31,7 +31,7 @@ int main(int argv, char** argc) {
                 scanf("%*u");
                 numVoluntarios--;
             }
-            printf("*\n");
+            (void)printf("*\n");
         } else {
           // Marca quais voltaram.
             while(numVoluntarios) {
@@ -42,10 +42,10 @@ int main(int argv, char** argc) {
             // Imprime os que não voltaram.
             for(voluntario = 1; voluntario <= totalVoluntarios; voluntario++) {
                 if(voluntarios[voluntario] == 0) {
-                    printf("%u ", voluntario);
+                    (void)printf("%u ", voluntario);
                 }
             }
-            printf("\n");
+            (void)printf("\n");
         }
     }
     return 0;

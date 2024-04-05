@@ -27,7 +27,7 @@ int main(int argv, char** argc) {
             fat2 *= num;
             num--;
         }
-        printf("%llu\n", fat1 + fat2);
+        (void)printf("%llu\n", fat1 + fat2);
     }
     return 0;
 }

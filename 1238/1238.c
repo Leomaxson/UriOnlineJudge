@@ -38,7 +38,7 @@ int main(int argv, char** argc) {
             }
         }
         resultado[j] = '\0';
-        printf("%s\n", resultado);
+        (void)printf("%s\n", resultado);
         instancias--;
     }
     return 0;

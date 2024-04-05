@@ -22,7 +22,7 @@ int main(int argv, char** argc) {
             num2 = resto;
         }
         // Imprime o resultado.
-        printf("%u\n", num1);
+        (void)printf("%u\n", num1);
         numInstancias--;
     }
     return 0;

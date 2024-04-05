@@ -21,9 +21,9 @@ int main(int argv, char** argc) {
             areaTotal += tiras[i];
         }
         if(areaTotal < areaEsperada) {  // Impossível.
-            printf("-.-\n");
+            (void)printf("-.-\n");
         } else if(areaTotal == areaEsperada) {  // Nenhum corte precisa ser feito.
-            printf(":D\n");
+            (void)printf(":D\n");
         } else {  // Precisa determinar o corte.
             qsort(tiras, numTiras, sizeof(int), Compara);
             areaAtual = areaTotal - areaEsperada;
@@ -42,7 +42,7 @@ int main(int argv, char** argc) {
                     alturaCorte = tiras[i];
                 }
             }
-            printf("%.4lf\n", alturaCortePrecisa);
+            (void)printf("%.4lf\n", alturaCortePrecisa);
         }
         // Lê os tamanhos da próxima instância.
         scanf("%d %d", &numTiras, &areaEsperada);

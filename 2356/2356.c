@@ -66,9 +66,9 @@ int main(int argv, char** argc) {
         // Verifica se o padrão aparece e escreve a resposta.
         result = verificaPadrao(DNA, tamanhoDNA, padrao, tamanhoPadrao);
         if(result) {
-            printf("Resistente\n");
+            (void)printf("Resistente\n");
         } else {
-            printf("Nao resistente\n");
+            (void)printf("Nao resistente\n");
         }
     }
     return 0;

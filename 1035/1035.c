@@ -11,9 +11,9 @@ int main(int argv, char** argc) {
         (c > 0) &&
         (d > 0) &&
         (a % 2 == 0)) {
-        printf("Valores aceitos\n");
+        (void)printf("Valores aceitos\n");
     } else {
-        printf("Valores nao aceitos\n");
+        (void)printf("Valores nao aceitos\n");
     }
     return 0;
 }

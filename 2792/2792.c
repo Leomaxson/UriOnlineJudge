@@ -32,14 +32,14 @@ int main(int argv, char** argc) {
   //i = tamVetor;
   //while(i > 1) {
   //  scanf("%d", &numero);
-  //  printf("%d ", vetor[numero]);
+  //  (void)printf("%d ", vetor[numero]);
   //  for(j = numero + 1; j <= tamVetor; j++) {
   //    vetor[j]--;
   //  }
   //  i--;
   //}
   //scanf("%d", &numero);
-  //printf("%d\n", vetor[numero]);
+  //(void)printf("%d\n", vetor[numero]);
   //free(vetor);
     return 0;
 }

@@ -149,16 +149,16 @@ int main(int argv, char** argc) {
         }
         switch(i) {
             case 1:
-                printf("%s\n", str[0]);
+                (void)printf("%s\n", str[0]);
                 break;
             case 2:
-                printf("%s %s\n", str[0], str[1]);
+                (void)printf("%s %s\n", str[0], str[1]);
                 break;
             case 3:
-                printf("%s %s %s\n", str[0], str[1], str[2]);
+                (void)printf("%s %s %s\n", str[0], str[1], str[2]);
                 break;
             case 4:
-                printf("%s %s %s %s\n", str[0], str[1], str[2], str[3]);
+                (void)printf("%s %s %s %s\n", str[0], str[1], str[2], str[3]);
                 break;
         }
         numInstancias--;

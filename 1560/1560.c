@@ -74,7 +74,7 @@ int main(int argv, char** argc) {
                 }
             }
         }
-        printf("%llu\n", energiaTotal);
+        (void)printf("%llu\n", energiaTotal);
         if(feof(stdin)) {
             break;
         }

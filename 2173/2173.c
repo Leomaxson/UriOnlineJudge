@@ -99,7 +99,7 @@ int main(int argv, char** argc) {
         }
         free(grafo);
         // Imprime o resultado.
-        printf("%d\n", -pesoAGMaxima - peso);
+        (void)printf("%d\n", -pesoAGMaxima - peso);
     }
     return 0;
 }

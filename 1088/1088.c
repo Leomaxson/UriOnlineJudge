@@ -76,9 +76,9 @@ int main(int argv, char** argc) {
         // free(sequencia);
         // Imprime o resultado.
         if(inversoes % 2 == 0) {
-            printf("Carlos\n");
+            (void)printf("Carlos\n");
         } else {
-            printf("Marcelo\n");
+            (void)printf("Marcelo\n");
         }
         // Lê o tamanho da próxima instância.
         scanf("%u", &tamanho);

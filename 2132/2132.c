@@ -25,7 +25,7 @@ int main(int argv, char** argc) {
                 resp += (long long int)pow(2, tam - i - 1);
             }
         }
-        printf("Palavra %d\n%d\n\n", ++test, resp);
+        (void)printf("Palavra %d\n%d\n\n", ++test, resp);
     }
     return 0;
 }

@@ -35,7 +35,7 @@ int main(int argv, char** argc) {
         if(numImpares) {
             numImpares--;
         }
-        printf("%u\n", numImpares);
+        (void)printf("%u\n", numImpares);
     }
     return 0;
 }

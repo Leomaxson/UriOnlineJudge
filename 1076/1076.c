@@ -60,7 +60,7 @@ int main(int argv, char** argc) {
         }
 
         // Imprime o número de movimentos necessários.
-        printf("%u\n", k);
+        (void)printf("%u\n", k);
         instancias--;
     }
     return 0;

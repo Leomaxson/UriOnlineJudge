@@ -159,9 +159,9 @@ int main(int argv, char** argc) {
         // Verifica se o padrão acontece na música.
         resultado = verificaPadrao(musica, tamanhoMusica, trecho, tamanhoTrecho);
         if(resultado) {
-            printf("S\n");
+            (void)printf("S\n");
         } else {
-            printf("N\n");
+            (void)printf("N\n");
         }
         // Lê os tamanhos da próxima instância.
         scanf("%d %d", &tamanhoMusica, &tamanhoTrecho);

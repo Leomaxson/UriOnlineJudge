@@ -34,7 +34,7 @@ int main(int argv, char** argc) {
             }
         }
         // Imprime o máximo de bolos de um único tipo.
-        printf("%d\n", maxBolos);
+        (void)printf("%d\n", maxBolos);
         numInstancias--;
     }
     return 0;

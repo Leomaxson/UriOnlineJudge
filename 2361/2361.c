@@ -14,14 +14,14 @@ int main(int argv, char** argc) {
         }
         // Imprime os primeiros K-1 elementos em ordem crescente.
         for(i = 1; i < resposta; i++) {
-            printf("%u ", i);
+            (void)printf("%u ", i);
         }
         // Imprime os elementos restantes em ordem decrescente.
         while(numPinos > resposta) {
-            printf("%u ", numPinos);
+            (void)printf("%u ", numPinos);
             numPinos--;
         }
-        printf("%u\n", numPinos);
+        (void)printf("%u\n", numPinos);
     }
     return 0;
 }

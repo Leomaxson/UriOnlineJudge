@@ -79,9 +79,9 @@ int main(int argv, char** argc) {
         }
         retorno = tentaCasar(numCamisas, numVoluntarios, 0, tamanho1, tamanho2, contTamanhos);
         if(retorno) {
-            printf("YES\n");
+            (void)printf("YES\n");
         } else {
-            printf("NO\n");
+            (void)printf("NO\n");
         }
         numInstancias--;
     }

@@ -11,7 +11,7 @@ int main(int argv, char** argc) {
     scanf("%d", &numLinhas);
     // Verifica condições de contorno.
     if(numLinhas == 0 || numColunas == 0) {
-        printf("!\n");
+        (void)printf("!\n");
         return 0;
     }
     // Lê o mapa.
@@ -50,17 +50,17 @@ int main(int argv, char** argc) {
                 }
                 break;
             case '#':  // Loop encontrado.
-                printf("!\n");
+                (void)printf("!\n");
                 return 0;
             default:  // Caractere inválido.
-                printf("!\n");
+                (void)printf("!\n");
                 return 0;
         }
         if(i < 0 || j < 0 || i >= numLinhas || j >= numColunas) {  // Saiu do mapa.
-            printf("!\n");
+            (void)printf("!\n");
             return 0;
         }
     }
-    printf("*\n");
+    (void)printf("*\n");
     return 0;
 }

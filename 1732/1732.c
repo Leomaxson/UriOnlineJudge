@@ -90,7 +90,7 @@ int main(int argv, char** argc) {
     // Faz a leitura das instâncias e escreve a resposta acessando o vetor na posição.
     while(scanf("%d", &instancia) != EOF) {
         instancia--;
-        printf("%d %d\n", colmeia[instancia].X, colmeia[instancia].Y);
+        (void)printf("%d %d\n", colmeia[instancia].X, colmeia[instancia].Y);
     }
     free(colmeia);
     return 0;

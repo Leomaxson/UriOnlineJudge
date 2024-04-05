@@ -27,10 +27,10 @@ void ImprimeComponente(unsigned char vertices[MAX_VERTICES][MAX_VERTICES], unsig
 
     for(i = 0; i < MAX_VERTICES; i++) {
         if(vertices[componente][i]) {
-            printf("%c,", i + 'a');
+            (void)printf("%c,", i + 'a');
         }
     }
-    printf("\n");
+    (void)printf("\n");
 }
 
 int main(int argv, char** argc) {
@@ -85,7 +85,7 @@ int main(int argv, char** argc) {
             }
         }
         // Imprime o resultado do caso teste encontrando cada componente, em ordem.
-        printf("Case #%u:\n", casoTeste);
+        (void)printf("Case #%u:\n", casoTeste);
         for(j = 0; j < numVertices; j++) {
             for(i = 0; i < numVertices; i++) {
                 if(vertices[i][j]) {
@@ -96,7 +96,7 @@ int main(int argv, char** argc) {
                 }
             }
         }
-        printf("%u connected components\n\n", numComponentes);
+        (void)printf("%u connected components\n\n", numComponentes);
         numCasosTeste--;
         casoTeste++;
     }

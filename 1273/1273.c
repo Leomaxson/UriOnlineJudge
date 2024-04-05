@@ -72,7 +72,7 @@ int main(int argv, char** argc) {
         TestCase_Write(&t);
         TestCase_Read(&t);
         if(t.NumWords > 0) {
-            printf("\n");
+            (void)printf("\n");
         }
     }
     return 0;

@@ -86,7 +86,7 @@ int main(int argv, char** argc) {
         tamString = separaVogaisConsoantes(buffer, vogais, &numVogais, indicesVogais, consoantes);
         numConsoantes = tamString - numVogais;
         scanf("%u", &numOperacoes);
-        printf("Caso #%u:\n", instancia);
+        (void)printf("Caso #%u:\n", instancia);
         shiftVogais = 0;
         shiftConsoantes = 0;
         while(numOperacoes) {
@@ -116,7 +116,7 @@ int main(int argv, char** argc) {
                         shiftConsoantes = 0;
                     }
                     montaString(vogais, consoantes, buffer, indicesVogais, tamString);
-                    printf("%s\n", buffer);
+                    (void)printf("%s\n", buffer);
                     break;
                 default:
                     break;

@@ -161,6 +161,6 @@ int main(int argv, char** argc) {
     // Executa o algoritmo de Dijkstra no grafo modificado.
     peso = Dijkstra(grafo);
     Grafo_Destroi(grafo);
-    printf("%d\n", peso);
+    (void)printf("%d\n", peso);
     return 0;
 }

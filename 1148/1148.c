@@ -92,9 +92,9 @@ int main(int argv, char** argc) {
             j--;
             peso = dijkstra(grafo, i, j, numVertices);
             if(peso == INT_MAX) {
-                printf("Nao e possivel entregar a carta\n");
+                (void)printf("Nao e possivel entregar a carta\n");
             } else {
-                printf("%d\n", peso);
+                (void)printf("%d\n", peso);
             }
             pesquisas--;
         }
@@ -103,7 +103,7 @@ int main(int argv, char** argc) {
             free(grafo[i]);
         }
         free(grafo);
-        printf("\n");
+        (void)printf("\n");
     }
     return 0;
 }

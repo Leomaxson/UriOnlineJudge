@@ -9,7 +9,7 @@ int main(int argv, char** argc) {
     scanf("%u", &n);
     i = RESTO;
     while(i < LIMITE) {
-        printf("%u\n", i);
+        (void)printf("%u\n", i);
         i += n;
     }
     return 0;

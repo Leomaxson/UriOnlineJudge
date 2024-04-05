@@ -15,25 +15,25 @@ int main(int argv, char** argc) {
 
     if(x > 0.0) {
         if(y > 0.0) {
-            printf("Q1\n");
+            (void)printf("Q1\n");
         } else if(y < 0.0) {
-            printf("Q4\n");
+            (void)printf("Q4\n");
         } else {
-            printf("Eixo X\n");
+            (void)printf("Eixo X\n");
         }
     } else if(x < 0.0) {
         if(y > 0.0) {
-            printf("Q2\n");
+            (void)printf("Q2\n");
         } else if(y < 0.0) {
-            printf("Q3\n");
+            (void)printf("Q3\n");
         } else {
-            printf("Eixo X\n");
+            (void)printf("Eixo X\n");
         }
     } else {
         if(y == 0.0) {
-            printf("Origem\n");
+            (void)printf("Origem\n");
         } else {
-            printf("Eixo Y\n");
+            (void)printf("Eixo Y\n");
         }
     }
     return 0;

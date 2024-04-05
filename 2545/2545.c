@@ -102,7 +102,7 @@ int main(int argv, char** argc) {
         }
         // Verifica se o grafo tem ciclo (impossível compilar).
         if(Grafo_PossuiCiclo(&g)) {
-            printf("-1\n");
+            (void)printf("-1\n");
         } else {
           // Verifica a maior profundidade da árvore.
             nivel = 0;
@@ -111,7 +111,7 @@ int main(int argv, char** argc) {
                     nivel = g.NivelVertice[i];
                 }
             }
-            printf("%u\n", nivel);
+            (void)printf("%u\n", nivel);
         }
     }
     return 0;

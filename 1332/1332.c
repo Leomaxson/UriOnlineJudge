@@ -29,12 +29,12 @@ int main(int argv, char** argc) {
                 one++;
             }
             if(one >= 2) {
-                printf("1\n");
+                (void)printf("1\n");
             } else {
-                printf("2\n");
+                (void)printf("2\n");
             }
         } else {  // 'three'
-            printf("3\n");
+            (void)printf("3\n");
         }
         instancias--;
     }

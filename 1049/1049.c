@@ -88,31 +88,31 @@ int getAnimalFromStrings(const char *vertebrado, const char *tipoAnimal, const c
 void printAnimal(int animal) {
     switch(animal) {
         case AGUIA:
-            printf("aguia\n");
+            (void)printf("aguia\n");
             break;
         case POMBA:
-            printf("pomba\n");
+            (void)printf("pomba\n");
             break;
         case HOMEM:
-            printf("homem\n");
+            (void)printf("homem\n");
             break;
         case VACA:
-            printf("vaca\n");
+            (void)printf("vaca\n");
             break;
         case PULGA:
-            printf("pulga\n");
+            (void)printf("pulga\n");
             break;
         case LAGARTA:
-            printf("lagarta\n");
+            (void)printf("lagarta\n");
             break;
         case SANGUESSUGA:
-            printf("sanguessuga\n");
+            (void)printf("sanguessuga\n");
             break;
         case MINHOCA:
-            printf("minhoca\n");
+            (void)printf("minhoca\n");
             break;
         default:
-            printf("indefinido\n");
+            (void)printf("indefinido\n");
     }
 }
 

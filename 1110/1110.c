@@ -59,16 +59,16 @@ int main(int argv, char** argc) {
             Fila_Enfileira(&fila, carta);
         }
         // Mostra a lista de cartas descartadas.
-        printf("Discarded cards: ");
+        (void)printf("Discarded cards: ");
         while(filaDescarte.Tamanho > 1) {
             carta = Fila_Desenfileira(&filaDescarte);
-            printf("%d, ", carta);
+            (void)printf("%d, ", carta);
         }
         carta = Fila_Desenfileira(&filaDescarte);
-        printf("%d\n", carta);
+        (void)printf("%d\n", carta);
         // Mostra a carta remanescente.
         carta = Fila_Desenfileira(&fila);
-        printf("Remaining card: %d\n", carta);
+        (void)printf("Remaining card: %d\n", carta);
         // Busca o tamanho da próxima instância.
         scanf("%d", &tamanho);
     }

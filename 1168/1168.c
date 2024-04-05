@@ -44,7 +44,7 @@ int main(int argv, char** argc) {
                     num_leds += 7;
             }
         }
-        printf("%u leds\n", num_leds);
+        (void)printf("%u leds\n", num_leds);
         instancias--;
     }
     return 0;

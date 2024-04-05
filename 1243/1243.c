@@ -95,7 +95,7 @@ int main(int argv, char** argc) {
 
     /*entrada = fopen("input.txt", "r");
     if(entrada == NULL) {
-      printf("Erro ao abrir o arquivo.");
+      (void)printf("Erro ao abrir o arquivo.");
       return 0;
     }*/
 
@@ -121,7 +121,7 @@ int main(int argv, char** argc) {
             }
         }
         // Calcula o tamanho médio das palavras da linha (enunciado) e imprime a dificuldade.
-        printf("%u\n", calculaDificuldade(comprimentoTotal, numPalavras));
+        (void)printf("%u\n", calculaDificuldade(comprimentoTotal, numPalavras));
     }
     return 0;
 }

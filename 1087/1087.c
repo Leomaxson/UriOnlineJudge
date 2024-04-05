@@ -18,7 +18,7 @@ int main(int argv, char** argc) {
             distancia = 2;
         }
         // Imprime o resultado.
-        printf("%d\n", distancia);
+        (void)printf("%d\n", distancia);
         // Lê a próxima instância.
         scanf("%d %d %d %d", &xInicial, &yInicial, &xFinal, &yFinal);
     }

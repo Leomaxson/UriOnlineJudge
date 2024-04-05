@@ -123,9 +123,9 @@ int main(int argv, char** argc) {
         }
         // Verifica se passou nos dois critérios.
         if(param >= 2) {
-            printf("1\n");
+            (void)printf("1\n");
         } else {
-            printf("0\n");
+            (void)printf("0\n");
         }
         // Destroi i grafo e lê os tamanhos da próxima instância.
         Grafo_Destroi(&g);
