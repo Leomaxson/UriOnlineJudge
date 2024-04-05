@@ -14,8 +14,8 @@
  * @param tamanho_padrao Tamanho do padrão.
  * @return Retorna o apontador para a ocorrência ou NULL se não achar.
  */
-const unsigned char *boyer_moore_horspool(const unsigned char *texto, unsigned char tamanho_texto,
-  const unsigned char *padrao, unsigned char tamanho_padrao) {
+const unsigned char *boyer_moore_horspool(const unsigned char *texto, size_t tamanho_texto,
+  const unsigned char *padrao, size_t tamanho_padrao) {
   unsigned char deslocamentos[UCHAR_MAX], i, ultimo;
 
   // Verifica as entradas antes de prosseguir com o algoritmo.
@@ -53,8 +53,8 @@ const unsigned char *boyer_moore_horspool(const unsigned char *texto, unsigned c
  */
 int main() {
   unsigned char *texto, *padrao, *aux;
-  unsigned char tamanho_texto, tamanho_padrao, tamanho_aux;
-  unsigned char i, j, maior_substring, instancia;
+  size_t tamanho_texto, tamanho_padrao, tamanho_aux, i, j;
+  unsigned char maior_substring, instancia;
 
   // Aloca espaço para ambas as strings.
   texto = malloc((TAMANHO_MAXIMO) * sizeof(unsigned char));
@@ -62,7 +62,7 @@ int main() {
 
   // Faz a leitura das instâncias e processa uma a uma. Se receber uma instância nula, sai e termina.
   while(fgets(texto, TAMANHO_MAXIMO, stdin) != NULL) {
-    gets(padrao);
+    fgets(padrao, TAMANHO_MAXIMO, stdin);
     tamanho_texto = strlen(texto);
     tamanho_padrao = strlen(padrao);
     // Determina como a menor string a string do padrão (se o texto for menor, inverte).

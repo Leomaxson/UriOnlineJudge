@@ -47,7 +47,7 @@ void TestCase_Write(TestCase *testCase) {
   int i;
 
   for(i = 0; i < testCase->NumWords; i++) {
-    (void)printf("%*s\n", testCase->MaxWordTam, testCase->Words[i].Text);
+    (void)printf("%*s\n", (int)testCase->MaxWordTam, testCase->Words[i].Text);
   }
 }
 

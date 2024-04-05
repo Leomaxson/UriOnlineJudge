@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
 /// Pi constant.
 #define PI (3.14159)
 

@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  unsigned int num_jogadas, joao[10000], maria[10000], instancias, i;
-  unsigned char valor;
+  unsigned int num_jogadas, joao[10000], maria[10000], instancias, i, valor;
 
   instancias = 0;
   while(1) {

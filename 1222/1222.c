@@ -48,7 +48,7 @@ int main() {
       }
     }
     // Imprime o número de páginas necessárias.
-    printf("%u\n", numPaginas);
+    printf("%llu\n", numPaginas);
   }
   return 0;
 }
