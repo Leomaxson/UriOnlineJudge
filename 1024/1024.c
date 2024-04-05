@@ -10,10 +10,10 @@
 * @return Retorna sempre zero.
 */
 int main() {
-  unsigned int numLinhas, tamanho, pos, i;
+  size_t numLinhas, tamanho, pos, i;
   char linha[TAMANHO_MAX_LINHA];
 
-  while(fscanf(stdin, "%u\n", &numLinhas) >= 1) {
+  while(fscanf(stdin, "%llu\n", &numLinhas) >= 1) {
     while(numLinhas > 0) {
       // Pega a próxima linha da entrada.
       fgets(linha, TAMANHO_MAX_LINHA, stdin);

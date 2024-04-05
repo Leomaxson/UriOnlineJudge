@@ -6,10 +6,10 @@
 
 int main() {
   char palavra[MAX_PALAVRA];
-  unsigned int numPalavras, maxLinhasPagina, maxCharsLinha, numCharsLinhaAtual, numLinhasPaginaAtual, numPaginas, tamPalavra;
+  size_t numPalavras, maxLinhasPagina, maxCharsLinha, numCharsLinhaAtual, numLinhasPaginaAtual, numPaginas, tamPalavra;
 
   while(!feof(stdin)) {
-    scanf("%u %u %u", &numPalavras, &maxLinhasPagina, &maxCharsLinha);
+    scanf("%llu %llu %llu", &numPalavras, &maxLinhasPagina, &maxCharsLinha);
     if(feof(stdin)) {
       continue;
     }

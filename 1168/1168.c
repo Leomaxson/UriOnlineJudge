@@ -1,4 +1,4 @@
-// #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
@@ -11,7 +11,7 @@
 */
 int main() {
   unsigned int instancias, num_leds;
-  unsigned char tamanho_numero, i;
+  size_t tamanho_numero, i;
   char numero[TAMANHO];
 
   scanf("%u", &instancias);

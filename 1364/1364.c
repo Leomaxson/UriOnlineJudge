@@ -48,7 +48,7 @@ int ComparaIntervalo(const void *a, const void *b) {
 }
 
 int BuscaEmoticonsLinha(Entrada *entrada, Intervalo *intervalos, int linha) {
-  int i, numIntervalos, tamEmoticon;
+  size_t i, numIntervalos, tamEmoticon;
   char *posLinha;
 
   numIntervalos = 0;

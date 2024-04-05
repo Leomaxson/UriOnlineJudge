@@ -12,7 +12,7 @@
  * A word of an instance.
  */
 typedef struct SWord {
-  int Size;
+  size_t Size;
   char Text[MAX_WORD_SIZE + 1];
 } Word;
 
@@ -21,7 +21,7 @@ typedef struct SWord {
  */
 typedef struct STestCase {
   int NumWords;
-  int MaxWordTam;
+  size_t MaxWordTam;
   Word Words[MAX_NUM_OF_WORDS];
 } TestCase;
 
@@ -30,7 +30,7 @@ typedef struct STestCase {
  * testCase Reference to the test case.
  */
 void TestCase_Read(TestCase *testCase) {
-  int i;
+  size_t i;
 
   (void)scanf("%d", &testCase->NumWords);
   for(i = 0; i < testCase->NumWords; i++) {

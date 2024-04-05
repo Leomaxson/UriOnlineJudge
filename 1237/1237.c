@@ -61,7 +61,7 @@ int main() {
   padrao = malloc((TAMANHO_MAXIMO) * sizeof(unsigned char));
 
   // Faz a leitura das instâncias e processa uma a uma. Se receber uma instância nula, sai e termina.
-  while(gets(texto) != NULL) {
+  while(fgets(texto, TAMANHO_MAXIMO, stdin) != NULL) {
     gets(padrao);
     tamanho_texto = strlen(texto);
     tamanho_padrao = strlen(padrao);

@@ -16,7 +16,7 @@ int main() {
   unsigned char letras[26], i, j, primeiro;
 
   // Faz a leitura das instâncias e processa uma a uma. Se receber uma instância nula, sai e termina.
-  while(gets(texto) != NULL) {
+  while(fgets(texto, TAMANHO_MAXIMO, stdin) != NULL) {
     // Inicializa os flags como zero.
     for(i = 0; i < NUM_LETRAS; i++) {
       letras[i] = 0;

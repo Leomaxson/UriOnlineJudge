@@ -37,7 +37,7 @@ int main() {
 
   // Carrega uma instância para o processador. Se conseguir ler uma linha da instância para a 
   // memória, lê as outras 31.
-  while(gets(leitura) != NULL) {
+  while(fgets(leitura, TAMANHO_INSTRUCAO, stdin) != NULL) {
     p.Memoria[0] = ConverteStringInstrucao(leitura);
     for(i = 1; i < TAMANHO_MEMORIA; i++) {
       gets(leitura);

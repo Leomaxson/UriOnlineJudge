@@ -4,7 +4,7 @@
 #define LIMITE 10000
 
 int main() {
-	unsigned short n, i;
+	unsigned int n, i;
 
 	scanf("%u", &n);
 	i = RESTO;

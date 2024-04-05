@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  unsigned short num_jogadas, joao[10000], maria[10000], instancias, i;
+  unsigned int num_jogadas, joao[10000], maria[10000], instancias, i;
   unsigned char valor;
 
   instancias = 0;

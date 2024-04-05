@@ -11,7 +11,7 @@
 int main() {
   char tag[TAM_TAG], subst[TAM_SUBST], textoOriginal[TAM_TEXTO], texto[TAM_TEXTO], saida[TAM_SAIDA];
   char *ptrTextoOriginal, *ptrTexto, *ptrSaida, *ptrTag;
-  unsigned int tamanhoTag, tamanhoSubst, tamanhoTexto, i, cont;
+  size_t tamanhoTag, tamanhoSubst, tamanhoTexto, i, cont;
 
   while(!feof(stdin)) {
     // Lê a entrada de uma instância.
