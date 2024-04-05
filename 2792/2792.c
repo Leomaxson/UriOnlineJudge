@@ -18,19 +18,6 @@ void decrementa(int *A, int tam, int i) {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 int main() {
   int *vetor, tamVetor, numero, i, j;
