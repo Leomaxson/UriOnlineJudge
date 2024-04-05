@@ -8,10 +8,10 @@ int main(int argv, char** argc) {
     char buffer[TAMANHO_BUFFER + 1], aux;
 
     // Lê o número de instâncias.
-    scanf("%u", &numInstancias);
+    (void)scanf("%u", &numInstancias);
     while(numInstancias) {
       // Lê os limites da instância.
-        scanf("%u %u", &min, &max);
+        (void)scanf("%u %u", &min, &max);
         // Imprime a ida.
         for(i = min; i <= max; i++) {
             (void)printf("%u", i);

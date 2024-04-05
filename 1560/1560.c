@@ -27,14 +27,14 @@ int main(int argv, char** argc) {
     double alfa, beta, gama;
 
 
-    scanf("%u %u", &numPretos, &numBrancos);
+    (void)scanf("%u %u", &numPretos, &numBrancos);
     while(!feof(stdin)) {
         // Lê todos os pontos.
         for(i = 0; i < numPretos; i++) {
-            scanf("%d %d", &pretos[i].X, &pretos[i].Y);
+            (void)scanf("%d %d", &pretos[i].X, &pretos[i].Y);
         }
         for(i = 0; i < numBrancos; i++) {
-            scanf("%d %d", &brancos[i].X, &brancos[i].Y);
+            (void)scanf("%d %d", &brancos[i].X, &brancos[i].Y);
         }
         // Prepara as variáveis para iniciar o processamento.
         energiaTotal = 0;
@@ -78,11 +78,11 @@ int main(int argv, char** argc) {
         if(feof(stdin)) {
             break;
         }
-        scanf("%u", &numPretos);
+        (void)scanf("%u", &numPretos);
         if(feof(stdin)) {
             break;
         }
-        scanf("%u", &numBrancos);
+        (void)scanf("%u", &numBrancos);
         if(feof(stdin)) {
             break;
         }

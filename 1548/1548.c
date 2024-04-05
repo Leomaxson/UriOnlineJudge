@@ -11,12 +11,12 @@ int main(int argv, char** argc) {
     int fila1[MAX_TAM], fila2[MAX_TAM], numInstancias, tamanhoFila, numElementosNaoTrocados, i;
 
     // Lê o número de instâncias.
-    scanf("%u", &numInstancias);
+    (void)scanf("%u", &numInstancias);
     while(numInstancias) {
       // Lê a instância.
-        scanf("%u", &tamanhoFila);
+        (void)scanf("%u", &tamanhoFila);
         for(i = 0; i < tamanhoFila; i++) {
-            scanf("%u", &fila1[i]);
+            (void)scanf("%u", &fila1[i]);
             fila2[i] = fila1[i];
         }
         // Ordena uma das filas.

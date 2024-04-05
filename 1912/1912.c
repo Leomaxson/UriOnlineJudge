@@ -12,12 +12,12 @@ int main(int argv, char** argc) {
     double alturaCortePrecisa;
 
     // Lê os tamanhos da primeira instância.
-    scanf("%d %d", &numTiras, &areaEsperada);
+    (void)scanf("%d %d", &numTiras, &areaEsperada);
     while(numTiras != 0 || areaEsperada != 0) {
       // Lê o vetor e determina a área total das tiras.
         areaTotal = 0;
         for(i = 0; i < numTiras; i++) {
-            scanf("%d", &tiras[i]);
+            (void)scanf("%d", &tiras[i]);
             areaTotal += tiras[i];
         }
         if(areaTotal < areaEsperada) {  // Impossível.
@@ -45,7 +45,7 @@ int main(int argv, char** argc) {
             (void)printf("%.4lf\n", alturaCortePrecisa);
         }
         // Lê os tamanhos da próxima instância.
-        scanf("%d %d", &numTiras, &areaEsperada);
+        (void)scanf("%d %d", &numTiras, &areaEsperada);
     }
     return 0;
 }

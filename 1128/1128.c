@@ -101,13 +101,13 @@ int main(int argv, char** argc) {
     Grafo g;
 
     // Lê os tamanhos da primeira instância.
-    scanf("%u %u", &numVertices, &numArestas);
+    (void)scanf("%u %u", &numVertices, &numArestas);
     while(numVertices) {
       // Cria o grafo vazio.
         Grafo_Cria(&g, numVertices);
         // Lê as arestas da instância.
         for(i = 0; i < numArestas; i++) {
-            scanf("%u %u %u", &v1, &v2, &param);
+            (void)scanf("%u %u %u", &v1, &v2, &param);
             v1--;
             v2--;
             Grafo_InsereAresta(&g, v1, v2);
@@ -129,7 +129,7 @@ int main(int argv, char** argc) {
         }
         // Destroi i grafo e lê os tamanhos da próxima instância.
         Grafo_Destroi(&g);
-        scanf("%u %u", &numVertices, &numArestas);
+        (void)scanf("%u %u", &numVertices, &numArestas);
     }
     return 0;
 }

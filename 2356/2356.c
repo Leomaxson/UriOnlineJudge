@@ -49,11 +49,11 @@ int main(int argv, char** argc) {
 
     while(!feof(stdin)) {
         // Tenta ler a próxima instancia.
-        scanf("%s", DNA);
+        (void)scanf("%s", DNA);
         if(feof(stdin)) {
             break;
         }
-        scanf("%s", padrao);
+        (void)scanf("%s", padrao);
         // Calcula o tamanho das sequências.
         tamanhoDNA = 0;
         while(DNA[tamanhoDNA] != '\0') {

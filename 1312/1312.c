@@ -5,12 +5,12 @@ int main(int argv, char** argc) {
     int numLinhas;
 
     // Lê o tamanho da primeira instância.
-    scanf("%d", &numLinhas);
+    (void)scanf("%d", &numLinhas);
     while(numLinhas > 0) {
 
 
       // Lê o tamanho da próxima instância.
-        scanf("%d", &numLinhas);
+        (void)scanf("%d", &numLinhas);
     }
     return 0;
 }

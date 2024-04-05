@@ -40,17 +40,17 @@ int main(int argv, char** argc) {
     int *pesosProjeteis, *danosProjeteis;
 
     // Lê o número de instâncias.
-    scanf("%d", &numInstancias);
+    (void)scanf("%d", &numInstancias);
     while(numInstancias) {
       // Lê a instância.
-        scanf("%d", &numProjeteis);
+        (void)scanf("%d", &numProjeteis);
         pesosProjeteis = (int *)malloc(numProjeteis * sizeof(int));
         danosProjeteis = (int *)malloc(numProjeteis * sizeof(int));
         for(i = 0; i < numProjeteis; i++) {
-            scanf("%d %d", &danosProjeteis[i], &pesosProjeteis[i]);
+            (void)scanf("%d %d", &danosProjeteis[i], &pesosProjeteis[i]);
         }
-        scanf("%d", &capacidadeCanhao);
-        scanf("%d", &resistenciaCastelo);
+        (void)scanf("%d", &capacidadeCanhao);
+        (void)scanf("%d", &resistenciaCastelo);
         // Calcula o problema da mochila inteira e verifica o resultado.
         resultado = problemaMochila(capacidadeCanhao, pesosProjeteis, danosProjeteis, numProjeteis);
         if(resultado < resistenciaCastelo) {

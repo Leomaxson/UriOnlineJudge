@@ -12,9 +12,9 @@ int main(int argv, char** argc) {
     int instancias, fib;
 
     // Lê o número de instâncias.
-    scanf("%d", &instancias);
+    (void)scanf("%d", &instancias);
     while(instancias) {
-        scanf("%d", &fib);
+        (void)scanf("%d", &fib);
         (void)printf("fib(%d) = %d calls = %d\n", fib, calls[fib], fibs[fib]);
         instancias--;
     }

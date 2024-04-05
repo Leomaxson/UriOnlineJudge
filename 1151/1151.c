@@ -4,7 +4,7 @@ int main(int argv, char** argc) {
     unsigned int num_termos, fib, fib_ant, fib_ant_ant;
 
     // Lê número de termos para calcular.
-    scanf("%u", &num_termos);
+    (void)scanf("%u", &num_termos);
     switch(num_termos) {
         case 0:
             break;

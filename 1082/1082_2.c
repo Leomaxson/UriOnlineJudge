@@ -39,7 +39,7 @@ int main(int argv, char** argc) {
     char vertice1, vertice2;
 
     // Lê a quantidade de instâncias que deverão ser executadas.
-    scanf("%u", &numCasosTeste);
+    (void)scanf("%u", &numCasosTeste);
     casoTeste = 1;
     while(numCasosTeste) {
       // Inicializa as matrizes com zero.
@@ -50,7 +50,7 @@ int main(int argv, char** argc) {
             }
         }
         // Lê os tamanhos da instância.
-        scanf("%u %u", &numVertices, &numArestas);
+        (void)scanf("%u %u", &numVertices, &numArestas);
         // Inicializa a matriz de vértices e o vetor de componentes.
         for(i = 0; i < numVertices; i++) {
             componentes[i] = 1;
@@ -59,7 +59,7 @@ int main(int argv, char** argc) {
         numComponentes = numVertices;
         // Lê cada uma das arestas da instância.
         for(i = 0; i < numArestas; i++) {
-            scanf("%c %c", &vertice1, &vertice2);
+            (void)scanf("%c %c", &vertice1, &vertice2);
             vertice1 -= 'a';
             vertice2 -= 'a';
             // Acha o componente do vértice 1.

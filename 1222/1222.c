@@ -9,7 +9,7 @@ int main(int argv, char** argc) {
     size_t numPalavras, maxLinhasPagina, maxCharsLinha, numCharsLinhaAtual, numLinhasPaginaAtual, numPaginas, tamPalavra;
 
     while(!feof(stdin)) {
-        scanf("%llu %llu %llu", &numPalavras, &maxLinhasPagina, &maxCharsLinha);
+        (void)scanf("%llu %llu %llu", &numPalavras, &maxLinhasPagina, &maxCharsLinha);
         if(feof(stdin)) {
             continue;
         }
@@ -18,7 +18,7 @@ int main(int argv, char** argc) {
         numLinhasPaginaAtual = 1;
         while(numPalavras) {
           // Lê a próxima palavra e calcula o tamanho.
-            scanf("%s", palavra);
+            (void)scanf("%s", palavra);
             tamPalavra = strlen(palavra);
             numCharsLinhaAtual += tamPalavra;
             // Verifica se tem que trocar de linha.

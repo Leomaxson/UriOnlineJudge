@@ -4,7 +4,7 @@ int main(int argv, char** argc) {
     unsigned int num_linhas, a, b, c;
 
     // Lê o número de linhas para imprimir.
-    scanf("%u", &num_linhas);
+    (void)scanf("%u", &num_linhas);
     a = 1;
     b = 2;
     c = 3;

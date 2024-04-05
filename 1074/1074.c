@@ -3,9 +3,9 @@
 int main(int argv, char** argc) {
     int instancias, x;
 
-    scanf("%d", &instancias);
+    (void)scanf("%d", &instancias);
     while(instancias > 0) {
-        scanf("%d", &x);
+        (void)scanf("%d", &x);
         if(x != 0) {
             if(x & 0x00000001) {
                 if(x >> 31) {

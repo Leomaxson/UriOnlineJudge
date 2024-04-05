@@ -11,7 +11,7 @@ int main(int argv, char** argc) {
     test = 0;
     while(!feof(stdin)) {
         string[0] = '\0';
-        scanf("%s", string);
+        (void)scanf("%s", string);
         if(string[0] == '\0') {
             break;
         }

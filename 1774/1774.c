@@ -34,14 +34,14 @@ int main(int argv, char** argc) {
     Aresta arestas[MAX_ARESTAS];
 
     // Lê a quantidade de vértices e arestas da instância.
-    scanf("%d %d", &numVertices, &numArestas);
+    (void)scanf("%d %d", &numVertices, &numArestas);
     // Cria a lista de vértices.
     for(i = 0; i < numVertices; i++) {
         vertices[i] = i;
     }
     // Lê todas as arestas e adiciona na lista.
     for(i = 0; i < numArestas; i++) {
-        scanf("%d %d %d", &v1, &v2, &peso);
+        (void)scanf("%d %d %d", &v1, &v2, &peso);
         v1--;
         v2--;
         arestas[i].Vertice1 = v1;

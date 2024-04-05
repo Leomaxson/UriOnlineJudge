@@ -8,22 +8,22 @@ int main(int argv, char** argc) {
     int numIngredientes, precosIngredientes[MAX_INGREDIENTES], numReceitas, precoReceita;
 
     // Lê o número de instâncias.
-    scanf("%d", &numInstancias);
+    (void)scanf("%d", &numInstancias);
     while(numInstancias) {
       // Lê os tamanhos da instância.
-        scanf("%d %d %d", &dinheiro, &numIngredientes, &numReceitas);
+        (void)scanf("%d %d %d", &dinheiro, &numIngredientes, &numReceitas);
         // Lê os preços dos ingredientes.
         for(i = 0; i < numIngredientes; i++) {
-            scanf("%d", &precosIngredientes[i]);
+            (void)scanf("%d", &precosIngredientes[i]);
         }
         // Lê as receitas de bolos, já calculando o custo de um bolo para cada uma e avaliando se ele é o máximo.
         maxBolos = 0;
         for(i = 0; i < numReceitas; i++) {
           // Calcula o preço da receita.
             precoReceita = 0;
-            scanf("%d", &numIngredientesReceita);
+            (void)scanf("%d", &numIngredientesReceita);
             while(numIngredientesReceita) {
-                scanf("%d %d", &ingrediente, &quantidade);
+                (void)scanf("%d %d", &ingrediente, &quantidade);
                 precoReceita += precosIngredientes[ingrediente] * quantidade;
                 numIngredientesReceita--;
             }

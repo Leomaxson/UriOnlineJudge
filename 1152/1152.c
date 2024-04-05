@@ -59,7 +59,7 @@ int main(int argv, char** argc) {
     arestas = malloc(MAX_ARESTAS * sizeof(Aresta));
     do {
       // Lê a quantidade de vértices e arestas da instância.
-        scanf("%d %d", &numVertices, &numArestas);
+        (void)scanf("%d %d", &numVertices, &numArestas);
         if(numVertices || numArestas) {
             pesoTotal = 0;
             // Cria a lista de vértices.
@@ -68,7 +68,7 @@ int main(int argv, char** argc) {
             }
             // Lê todos os vértices e adiciona na lista.
             for(i = 0; i < numArestas; i++) {
-                scanf("%d %d %d", &arestas[i].Vertice1, &arestas[i].Vertice2, &arestas[i].Peso);
+                (void)scanf("%d %d %d", &arestas[i].Vertice1, &arestas[i].Vertice2, &arestas[i].Peso);
                 pesoTotal += arestas[i].Peso;
             }
             // Ordena a lista de arestas por peso preparando para executar o algoritmo de Kruskal.

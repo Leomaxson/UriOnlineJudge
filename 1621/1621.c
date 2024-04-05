@@ -61,7 +61,7 @@ int main(int argv, char** argc) {
     Fila fila;
 
     // Lê os tamanhos da primeira instância.
-    scanf("%d %d", &numLinhas, &numColunas);
+    (void)scanf("%d %d", &numLinhas, &numColunas);
     while(numLinhas != 0 || numColunas != 0) {
       // Aloca a matriz do labirinto.
         labirinto = (char **)malloc(numLinhas * sizeof(char *));
@@ -70,7 +70,7 @@ int main(int argv, char** argc) {
         }
         // Faz a leitura do labirinto.
         for(i = 0; i < numLinhas; i++) {
-            scanf("%s", labirinto[i]);
+            (void)scanf("%s", labirinto[i]);
         }
         // Encontra um vértice para começar a busca.
         itemMax.Distancia = -1;
@@ -165,7 +165,7 @@ int main(int argv, char** argc) {
         // Imprime a resposta da maior distância.
         (void)printf("%d\n", maiorDistancia);
         // Lê os tamanhos da próxima instância.
-        scanf("%d %d", &numLinhas, &numColunas);
+        (void)scanf("%d %d", &numLinhas, &numColunas);
     }
     return 0;
 }

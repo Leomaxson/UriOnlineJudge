@@ -31,18 +31,18 @@ int main(int argv, char** argc) {
     int numPedidos, maxPizzas, numPizzas[MAX_PEDIDOS], tempoEntrega[MAX_PEDIDOS], i;
 
     // Lê o tamanho da primeira instância.
-    scanf("%d", &numPedidos);
+    (void)scanf("%d", &numPedidos);
     while(numPedidos > 0) {
       // Lê a instância.
-        scanf("%d", &maxPizzas);
+        (void)scanf("%d", &maxPizzas);
         for(i = 0; i < numPedidos; i++) {
-            scanf("%d %d", &tempoEntrega[i], &numPizzas[i]);
+            (void)scanf("%d %d", &tempoEntrega[i], &numPizzas[i]);
         }
         // Calcula o problema da mochila 0-1 para os pedidos.
         i = problemaMochila(maxPizzas, numPizzas, tempoEntrega, numPedidos);
         (void)printf("%d min.\n", i);
         // Lê o tamanho da próxima instância.
-        scanf("%d", &numPedidos);
+        (void)scanf("%d", &numPedidos);
     }
     return 0;
 }

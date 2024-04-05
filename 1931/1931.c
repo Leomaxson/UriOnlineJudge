@@ -143,10 +143,10 @@ int main(int argv, char** argc) {
     int numVertices, numArestas, v1, v2, peso;
 
     // Lê e cria o grafo original.
-    scanf("%d %d", &numVertices, &numArestas);
+    (void)scanf("%d %d", &numVertices, &numArestas);
     grafoOriginal = Grafo_Cria(numVertices);
     while(numArestas) {
-        scanf("%d %d %d", &v1, &v2, &peso);
+        (void)scanf("%d %d %d", &v1, &v2, &peso);
         v1--;
         v2--;
         Grafo_AdicionaAresta(grafoOriginal, v1, v2, peso);

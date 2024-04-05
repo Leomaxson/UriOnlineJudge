@@ -6,8 +6,8 @@ int main(int argv, char** argc) {
     int x, y, contagem;
 
     // Lê os valores de X e Y.
-    scanf("%d", &x);
-    scanf("%d", &y);
+    (void)scanf("%d", &x);
+    (void)scanf("%d", &y);
     // Define o menor como X.
     if(y < x) {
         contagem = x;

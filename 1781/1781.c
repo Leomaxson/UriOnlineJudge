@@ -76,28 +76,28 @@ int main(int argv, char** argc) {
     unsigned int tamString, numVogais, numConsoantes;
     unsigned int numOperacoes, op, shift, shiftVogais, shiftConsoantes;
 
-    scanf("%u", &numInstancias);
+    (void)scanf("%u", &numInstancias);
     instancia = 1;
     while(instancia <= numInstancias) {
         vogais = string1;
         consoantes = string2;
         buffer = string3;
-        scanf("%s", buffer);
+        (void)scanf("%s", buffer);
         tamString = separaVogaisConsoantes(buffer, vogais, &numVogais, indicesVogais, consoantes);
         numConsoantes = tamString - numVogais;
-        scanf("%u", &numOperacoes);
+        (void)scanf("%u", &numOperacoes);
         (void)printf("Caso #%u:\n", instancia);
         shiftVogais = 0;
         shiftConsoantes = 0;
         while(numOperacoes) {
-            scanf("%u", &op);
+            (void)scanf("%u", &op);
             switch(op) {
                 case OP_SHIFT_VOGAIS:
-                    scanf("%u", &shift);
+                    (void)scanf("%u", &shift);
                     shiftVogais += shift;
                     break;
                 case OP_SHIFT_CONSOANTES:
-                    scanf("%u", &shift);
+                    (void)scanf("%u", &shift);
                     shiftConsoantes += shift;
                     break;
                 case OP_IMPRIME:

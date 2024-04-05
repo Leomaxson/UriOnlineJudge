@@ -15,7 +15,7 @@ int main(int argv, char** argc) {
 
     while(!feof(stdin)) {
       // Lê a entrada de uma instância.
-        scanf("%s %s", tag, subst);
+        (void)scanf("%s %s", tag, subst);
         getchar();
         fgets(textoOriginal, TAM_TEXTO, stdin);
         if(feof(stdin)) {

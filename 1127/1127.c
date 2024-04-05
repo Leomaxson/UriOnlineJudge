@@ -74,7 +74,7 @@ int calculaIndice(char nota, char modificador) {
 void leNota(char *nota, char * modificador) {
     char leitura[5];
 
-    scanf("%s", leitura);
+    (void)scanf("%s", leitura);
     *nota = leitura[0];
     *modificador = leitura[1];
 }
@@ -149,7 +149,7 @@ int main(int argv, char** argc) {
     int tamanhoMusica, tamanhoTrecho, musica[MUSICA_TAMANHO_MAX], trecho[TRECHO_TAMANHO_MAX], resultado;
 
     // Lê os tamanhos da primeira instância.
-    scanf("%d %d", &tamanhoMusica, &tamanhoTrecho);
+    (void)scanf("%d %d", &tamanhoMusica, &tamanhoTrecho);
     while(tamanhoMusica != 0 && tamanhoTrecho != 0) {
       // Calcula os deslocamentos da música e do trecho.
         leLinhaCalculaDeslocamentos(musica, tamanhoMusica);
@@ -164,7 +164,7 @@ int main(int argv, char** argc) {
             (void)printf("N\n");
         }
         // Lê os tamanhos da próxima instância.
-        scanf("%d %d", &tamanhoMusica, &tamanhoTrecho);
+        (void)scanf("%d %d", &tamanhoMusica, &tamanhoTrecho);
     }
     return 0;
 }

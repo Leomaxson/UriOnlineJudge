@@ -14,7 +14,7 @@ int main(int argv, char** argc) {
     unsigned int tempo, golsBrasil, golsAlemanha;
 
     // Lê a primeira instância.
-    scanf("%u", &tempo);
+    (void)scanf("%u", &tempo);
     // Executa enquanto o tempo for diferente de zero.
     while(tempo != 0) {
         // Calcula o número de gols do Brasil, arredondado para baixo.
@@ -28,7 +28,7 @@ int main(int argv, char** argc) {
         // Imprime o resultado da instância.
         (void)printf("Brasil %u x Alemanha %u\n", golsBrasil, golsAlemanha);
         // Lê o tempo da próxima instância.
-        scanf("%u", &tempo);
+        (void)scanf("%u", &tempo);
     }
     return 0;
 }

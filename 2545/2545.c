@@ -84,7 +84,7 @@ int main(int argv, char** argc) {
 
     while(!feof(stdin)) {
       // Lê o tamanho da instância.
-        scanf("%u", &numVertices);
+        (void)scanf("%u", &numVertices);
         if(feof(stdin)) {
             break;
         }
@@ -92,9 +92,9 @@ int main(int argv, char** argc) {
         Grafo_Cria(&g, numVertices);
         // Lê as arestas da instância.
         for(i = 0; i < numVertices; i++) {
-            scanf("%u", &numArestas);
+            (void)scanf("%u", &numArestas);
             while(numArestas) {
-                scanf("%u", &j);
+                (void)scanf("%u", &j);
                 j--;
                 Grafo_InsereAresta(&g, i, j);
                 numArestas--;

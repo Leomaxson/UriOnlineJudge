@@ -8,7 +8,7 @@ int main(int argv, char** argc) {
 
     while(1) {
       // Lê a instância e verifica a condição de saída.
-        scanf("%u %u", &numPinos, &resposta);
+        (void)scanf("%u %u", &numPinos, &resposta);
         if(numPinos == 0 && resposta == 0) {
             break;
         }

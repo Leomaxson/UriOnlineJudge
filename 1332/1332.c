@@ -12,9 +12,9 @@ int main(int argv, char** argc) {
     unsigned int instancias;
     unsigned char one;
 
-    scanf("%u", &instancias);
+    (void)scanf("%u", &instancias);
     while(instancias > 0) {
-        scanf("%s", string);
+        (void)scanf("%s", string);
         if(string[3] == '\0') {  // 'one' ou 'two'
             one = 0;
             // Conta quantos caracteres da palavra 'one' estão corretos. Se dois ou mais, a 

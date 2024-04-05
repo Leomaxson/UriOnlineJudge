@@ -10,7 +10,7 @@ int main(int argv, char** argc) {
 
     while(!feof(stdin)) {
       // Lê a próxima instância.
-        scanf("%s", &palavra);
+        (void)scanf("%s", &palavra);
         if(feof(stdin)) {
             break;
         }

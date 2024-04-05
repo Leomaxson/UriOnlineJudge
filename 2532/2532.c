@@ -40,7 +40,7 @@ int main(int argv, char** argc) {
 
     while(!feof(stdin)) {
         // Lê os tamanhos da instância.
-        scanf("%d %d", &controle.NumMagias, &controle.VidaTotal);
+        (void)scanf("%d %d", &controle.NumMagias, &controle.VidaTotal);
         if(feof(stdin)) {
             break;
         }
@@ -48,7 +48,7 @@ int main(int argv, char** argc) {
         controle.ManaMagia = (int *)malloc(controle.NumMagias * sizeof(int));
         controle.DanoMagia = (int *)malloc(controle.NumMagias * sizeof(int));
         for(i = 0; i < controle.NumMagias; i++) {
-            scanf("%d %d", &controle.DanoMagia[i], &controle.ManaMagia[i]);
+            (void)scanf("%d %d", &controle.DanoMagia[i], &controle.ManaMagia[i]);
         }
         // Prepara o caminhamento na árvore de busca.
         controle.ManaAtual = 0;

@@ -7,8 +7,8 @@ int main(int argv, char** argc) {
     int numLinhas, numColunas, i, j;
 
     // Lê os tamanhos do mapa.
-    scanf("%d", &numColunas);
-    scanf("%d", &numLinhas);
+    (void)scanf("%d", &numColunas);
+    (void)scanf("%d", &numLinhas);
     // Verifica condições de contorno.
     if(numLinhas == 0 || numColunas == 0) {
         (void)printf("!\n");
@@ -16,7 +16,7 @@ int main(int argv, char** argc) {
     }
     // Lê o mapa.
     for(i = 0; i < numLinhas; i++) {
-        scanf("%s", mapa[i]);
+        (void)scanf("%s", mapa[i]);
     }
     // Percorre o mapa até encontrar o tesouro, ou sair do mapa, ou entrar em loop.
     i = 0;

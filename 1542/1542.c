@@ -19,12 +19,12 @@ int main(int argv, char** argc) {
     unsigned int x, d, q, p;
 
     while(1) {
-        scanf("%u", &q);
+        (void)scanf("%u", &q);
         if(q == 0) {
             break;
         }
-        scanf("%u", &d);
-        scanf("%u", &p);
+        (void)scanf("%u", &d);
+        (void)scanf("%u", &p);
         x = (d * q * p) / (p - q);
         if(x == 1) {
             (void)printf("1 pagina\n");

@@ -18,17 +18,17 @@ int main(int argv, char** argc) {
     unsigned int numPilotos, i, j, numUltrapassagens, pilotoAtual;
 
     while(1) {
-        scanf("%u", &numPilotos);
+        (void)scanf("%u", &numPilotos);
         if(feof(stdin)) {
             break;
         }
         // Lê o grid de largada.
         for(i = 0; i < numPilotos; i++) {
-            scanf("%u", &(ordemLargada[i]));
+            (void)scanf("%u", &(ordemLargada[i]));
         }
         // Lê o grid de chegada.
         for(i = 0; i < numPilotos; i++) {
-            scanf("%u", &(ordemChegada[i]));
+            (void)scanf("%u", &(ordemChegada[i]));
         }
         // Ordena o grid de chegada, com base no grid de largada. O número de permutações é o número 
         // de ultrapassagens.

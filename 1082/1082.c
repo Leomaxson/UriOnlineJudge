@@ -16,11 +16,11 @@ int main(int argv, char** argc) {
     char v1, v2;
 
     // Lê o número de instâncias.
-    scanf("%d\n", &numInstancias);
+    (void)scanf("%d\n", &numInstancias);
     instancia = 1;
     while(numInstancias) {
       // Lê os tamanhos da instância.
-        scanf("%d %d", &numVertices, &numArestas);
+        (void)scanf("%d %d", &numVertices, &numArestas);
         // Inicializa o vetor de componentes.
         for(i = 0; i < numVertices; i++) {
             componentes[i] = i;
@@ -28,7 +28,7 @@ int main(int argv, char** argc) {
         }
         // Lê todas as arestas, marcando os componentes conectados.
         while(numArestas) {
-            scanf("\n%c %c", &v1, &v2);
+            (void)scanf("\n%c %c", &v1, &v2);
             v1 -= 'a';
             v2 -= 'a';
             i = min(componentes[v1], componentes[v2]);

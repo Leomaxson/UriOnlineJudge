@@ -6,7 +6,7 @@ int main(int argv, char** argc) {
     unsigned int numGenes, numConsultas, casoTeste, numInversoes, i, j, aux, genes[MAX_GENES];
 
     // Lê o tamanho da primeira instância para começar o algoritmo.
-    scanf("%u", &numGenes);
+    (void)scanf("%u", &numGenes);
     casoTeste = 1;
     while(numGenes) {
       // Inicializa o vetor de genes.
@@ -14,9 +14,9 @@ int main(int argv, char** argc) {
             genes[i] = i;
         }
         // Lê a quantidade de inversões e aplica cada uma delas ao vetor.
-        scanf("%u", &numInversoes);
+        (void)scanf("%u", &numInversoes);
         while(numInversoes) {
-            scanf("%u %u", &i, &j);
+            (void)scanf("%u %u", &i, &j);
             // Aplica a inversão.
             while(i < j) {
                 aux = genes[i];
@@ -30,9 +30,9 @@ int main(int argv, char** argc) {
         // Imprime o número do caso de teste.
         (void)printf("Genome %u\n", casoTeste);
         // Lê a quantidade de consultas e escreve a resposta para cada uma delas.
-        scanf("%u", &numConsultas);
+        (void)scanf("%u", &numConsultas);
         while(numConsultas) {
-            scanf("%u", &aux);
+            (void)scanf("%u", &aux);
             for(i = 1; i <= numGenes; i++) {
                 if(genes[i] == aux) {
                     (void)printf("%u\n", i);
@@ -42,7 +42,7 @@ int main(int argv, char** argc) {
             numConsultas--;
         }
         // Lê o tamanho da próxima instância.
-        scanf("%u", &numGenes);
+        (void)scanf("%u", &numGenes);
         casoTeste++;
     }
     return 0;

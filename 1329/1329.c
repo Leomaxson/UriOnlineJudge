@@ -5,14 +5,14 @@ int main(int argv, char** argc) {
 
     instancias = 0;
     while(1) {
-        scanf("%u", &num_jogadas);
+        (void)scanf("%u", &num_jogadas);
         if(num_jogadas == 0) {
             break;
         }
         joao[instancias] = 0;
         maria[instancias] = 0;
         do {
-            scanf("%u", &valor);
+            (void)scanf("%u", &valor);
             if(valor) {
                 joao[instancias]++;
             } else {

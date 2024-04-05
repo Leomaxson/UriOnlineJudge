@@ -75,7 +75,7 @@ int main(int argv, char** argc) {
         }
         // Lê todas as arestas do grafo.
         while(numArestas) {
-            scanf("%d %d %d", &v1, &v2, &peso);
+            (void)scanf("%d %d %d", &v1, &v2, &peso);
             // Ajusta a numeração do vértice para [0..numVertices - 1] ao invés de [1..numVertices].
             v1--;
             v2--;

@@ -8,12 +8,12 @@ int main(int argv, char** argc) {
 
     while(1) {
       // Lê os tamanhos da instância e verifica se não é a condição de término.
-        scanf("%i %i", &d, &n);
+        (void)scanf("%i %i", &d, &n);
         if(d == 0 && n == 0) {
             break;
         }
         // Lê os dígitos do número.
-        scanf("%s", &numero);
+        (void)scanf("%s", &numero);
         /*pos = 0;
         for(digito = '9'; digito >= '1'; digito--) {
           for(i = pos; i <= pos + n; i++) {

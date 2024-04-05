@@ -93,15 +93,15 @@ int main(int argv, char** argc) {
     Grafo grafo;
 
     // Lê a quantidade de instâncias que deverão ser executadas.
-    scanf("%d", &numInstancias);
+    (void)scanf("%d", &numInstancias);
     while(numInstancias) {
       // Lê as pessoas da instância e monta o grafo de distâncias.
-        scanf("%d", &numPessoas);
+        (void)scanf("%d", &numPessoas);
         posX = (int *)malloc(numPessoas * sizeof(int));
         posY = (int *)malloc(numPessoas * sizeof(int));
         Grafo_Cria(&grafo, numPessoas, (numPessoas * (numPessoas - 1)) / 2);
         for(i = 0; i < numPessoas; i++) {
-            scanf("%d %d", &posX[i], &posY[i]);
+            (void)scanf("%d %d", &posX[i], &posY[i]);
         }
         // Cálculo da matriz de distâncias.
         indiceAresta = 0;

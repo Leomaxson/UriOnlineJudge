@@ -5,10 +5,10 @@ int main(int argv, char** argc) {
     unsigned int numInstancias, num1, num2, resto;
 
     // Lê o número de instâncias.
-    scanf("%u", &numInstancias);
+    (void)scanf("%u", &numInstancias);
     while(numInstancias) {
       // Lê os dois números da instância.
-        scanf("%u %u", &num1, &num2);
+        (void)scanf("%u %u", &num1, &num2);
         if(num2 > num1) {
             resto = num1;
             num1 = num2;

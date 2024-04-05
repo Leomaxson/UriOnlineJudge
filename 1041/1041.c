@@ -10,8 +10,8 @@ Ler o ponto na entrada e tratar com ifs-elses cada um dos casos de quadrantes, e
 int main(int argv, char** argc) {
     double x, y;
 
-    scanf("%lf", &x);
-    scanf("%lf", &y);
+    (void)scanf("%lf", &x);
+    (void)scanf("%lf", &y);
 
     if(x > 0.0) {
         if(y > 0.0) {

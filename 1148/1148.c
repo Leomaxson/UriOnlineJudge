@@ -73,7 +73,7 @@ int main(int argv, char** argc) {
         }
         // Faz a leitura de todas as arestas.
         while(numArestas) {
-            scanf("%d %d %d", &i, &j, &peso);
+            (void)scanf("%d %d %d", &i, &j, &peso);
             i--;
             j--;
             if(grafo[j][i] != -1) {
@@ -85,9 +85,9 @@ int main(int argv, char** argc) {
             numArestas--;
         }
         // Realiza todas as pesquisas da instância.
-        scanf("%d", &pesquisas);
+        (void)scanf("%d", &pesquisas);
         while(pesquisas) {
-            scanf("%d %d", &i, &j);
+            (void)scanf("%d %d", &i, &j);
             i--;
             j--;
             peso = dijkstra(grafo, i, j, numVertices);

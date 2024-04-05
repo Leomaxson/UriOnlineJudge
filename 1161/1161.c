@@ -12,7 +12,7 @@ int main(int argv, char** argc) {
     long long unsigned int fat1, fat2;
 
     while(1) {
-        scanf("%u", &num);
+        (void)scanf("%u", &num);
         if(feof(stdin)) {
             break;
         }
@@ -21,7 +21,7 @@ int main(int argv, char** argc) {
             fat1 *= num;
             num--;
         }
-        scanf("%u", &num);
+        (void)scanf("%u", &num);
         fat2 = 1;
         while(num > 1) {
             fat2 *= num;

@@ -64,12 +64,12 @@ int main(int argv, char** argc) {
     // unsigned int *sequencia;
 
     // Lê o tamanho da primeira instância.
-    scanf("%u", &tamanho);
+    (void)scanf("%u", &tamanho);
     while(tamanho) {
       // Lê a sequência.
       // sequencia = (unsigned int*)malloc(tamanho * sizeof(unsigned int));
         for(i = 0; i < tamanho; i++) {
-            scanf("%u", &sequencia[i]);
+            (void)scanf("%u", &sequencia[i]);
         }
         // Calcula o número de inversões.
         inversoes = mergeSort(sequencia, 0, tamanho);
@@ -81,7 +81,7 @@ int main(int argv, char** argc) {
             (void)printf("Marcelo\n");
         }
         // Lê o tamanho da próxima instância.
-        scanf("%u", &tamanho);
+        (void)scanf("%u", &tamanho);
     }
     return 0;
 }

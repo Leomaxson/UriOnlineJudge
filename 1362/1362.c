@@ -63,13 +63,13 @@ int main(int argv, char** argc) {
     unsigned int tamanho1[MAX_VOLUNTARIOS], tamanho2[MAX_VOLUNTARIOS], contTamanhos[NUM_TAMANHOS];
     char strTamanho1[MAX_STR_TAMANHO], strTamanho2[MAX_STR_TAMANHO];
 
-    scanf("%u", &numInstancias);
+    (void)scanf("%u", &numInstancias);
     while(numInstancias) {
       // Lê a instância.
-        scanf("%u %u", &numCamisas, &numVoluntarios);
+        (void)scanf("%u %u", &numCamisas, &numVoluntarios);
         numCamisas /= 6;
         for(i = 0; i < numVoluntarios; i++) {
-            scanf("%s %s", strTamanho1, strTamanho2);
+            (void)scanf("%s %s", strTamanho1, strTamanho2);
             tamanho1[i] = converteStrTamanho(strTamanho1);
             tamanho2[i] = converteStrTamanho(strTamanho2);
         }

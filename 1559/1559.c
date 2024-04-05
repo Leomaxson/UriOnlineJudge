@@ -20,13 +20,13 @@ int main(int argv, char** argc) {
     unsigned int quadro[TAM_QUADRO][TAM_QUADRO], numInstancias, down, left, right, up, i, j, flag;
     char *str[TAM_QUADRO];
 
-    scanf("%u", &numInstancias);
+    (void)scanf("%u", &numInstancias);
     while(numInstancias) {
       // Lê a instância.
-        scanf("%u %u %u %u", &quadro[0][0], &quadro[0][1], &quadro[0][2], &quadro[0][3]);
-        scanf("%u %u %u %u", &quadro[1][0], &quadro[1][1], &quadro[1][2], &quadro[1][3]);
-        scanf("%u %u %u %u", &quadro[2][0], &quadro[2][1], &quadro[2][2], &quadro[2][3]);
-        scanf("%u %u %u %u", &quadro[3][0], &quadro[3][1], &quadro[3][2], &quadro[3][3]);
+        (void)scanf("%u %u %u %u", &quadro[0][0], &quadro[0][1], &quadro[0][2], &quadro[0][3]);
+        (void)scanf("%u %u %u %u", &quadro[1][0], &quadro[1][1], &quadro[1][2], &quadro[1][3]);
+        (void)scanf("%u %u %u %u", &quadro[2][0], &quadro[2][1], &quadro[2][2], &quadro[2][3]);
+        (void)scanf("%u %u %u %u", &quadro[3][0], &quadro[3][1], &quadro[3][2], &quadro[3][3]);
         // Zera os flags.
         down = 0;
         left = 0;

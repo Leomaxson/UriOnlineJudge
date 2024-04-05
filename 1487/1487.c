@@ -30,19 +30,19 @@ int main(int argv, char** argc) {
     int tempoAtracoes[MAX_ATRACOES], pontosAtracoes[MAX_ATRACOES];
 
     // Lê a primeira instância.
-    scanf("%d %d", &numAtracoes, &tempoDisponivel);
+    (void)scanf("%d %d", &numAtracoes, &tempoDisponivel);
     instancia = 1;
     while(numAtracoes > 0) {
       // Lê os valores das atrações.
         for(i = 0; i < numAtracoes; i++) {
-            scanf("%d %d", &tempoAtracoes[i], &pontosAtracoes[i]);
+            (void)scanf("%d %d", &tempoAtracoes[i], &pontosAtracoes[i]);
         }
         // Encontra a maior pontuação possível.
         pontuacao = resolveMochilaIlimitada(tempoDisponivel, numAtracoes, pontosAtracoes, tempoAtracoes);
         // Imprime o resultado.
         (void)printf("Instancia %d\n%d\n\n", instancia, pontuacao);
         // Lê a próxima instância.
-        scanf("%d %d", &numAtracoes, &tempoDisponivel);
+        (void)scanf("%d %d", &numAtracoes, &tempoDisponivel);
         instancia++;
     }
     return 0;

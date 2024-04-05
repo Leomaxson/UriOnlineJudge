@@ -21,10 +21,10 @@ typedef struct SEntrada {
 void LeEntrada(Entrada *entrada) {
     int i;
 
-    scanf("%d %d", &entrada->NumEmoticons, &entrada->NumLinhas);
+    (void)scanf("%d %d", &entrada->NumEmoticons, &entrada->NumLinhas);
     if(entrada->NumEmoticons != 0 || entrada->NumLinhas != 0) {
         for(i = 0; i < entrada->NumEmoticons; i++) {
-            scanf("%s", entrada->Emoticons[i]);
+            (void)scanf("%s", entrada->Emoticons[i]);
         }
         getchar();
         for(i = 0; i < entrada->NumLinhas; i++) {

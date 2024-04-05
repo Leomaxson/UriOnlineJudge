@@ -16,18 +16,18 @@ int main(int argv, char** argc) {
 //    double preco;
 //
 //    // Lê os tamanhos da primeira instância para começar o algoritmo.
-//    scanf("%u %u", &lista.Tamanho, &numProdutos);
+//    (void)scanf("%u %u", &lista.Tamanho, &numProdutos);
 //    while(lista.Tamanho != 0 || numProdutos != 0) {
 //      // Lê os elementos da lista.
 //        for(i = 0; i < lista.Tamanho; i++) {
-//            scanf("%u", &lista.Itens[i]);
+//            (void)scanf("%u", &lista.Itens[i]);
 //        }
 //        // Ajusta alguns valores iniciais da lista.
 //        lista.Encontrados = 0;
 //        lista.Somas[0] = 0.0;
 //        // Começa a ler os itens do supermercado.
 //        while(numProdutos) {
-//            scanf("%u %lf", &identificador, &preco);
+//            (void)scanf("%u %lf", &identificador, &preco);
 //            // 1. Verifica se o produto está em algum item já encontrado da lista.
 //            // 2. Se estiver, verifica se é mais barato do que o menor preço já encontrado para aquele 
 //            //    item.
@@ -56,7 +56,7 @@ int main(int argv, char** argc) {
 //
 //
 //    // Lê o tamanho da primeira instância para começar o algoritmo.
-//    scanf("%u", &numGenes);
+//    (void)scanf("%u", &numGenes);
 //    casoTeste = 1;
 //    while(numGenes) {
 //      // Inicializa o vetor de genes.
@@ -64,9 +64,9 @@ int main(int argv, char** argc) {
 //            genes[i] = i;
 //        }
 //        // Lê a quantidade de inversões e aplica cada uma delas ao vetor.
-//        scanf("%u", &numInversoes);
+//        (void)scanf("%u", &numInversoes);
 //        while(numInversoes) {
-//            scanf("%u %u", &i, &j);
+//            (void)scanf("%u %u", &i, &j);
 //            // Aplica a inversão.
 //            while(i < j) {
 //                aux = genes[i];
@@ -80,9 +80,9 @@ int main(int argv, char** argc) {
 //        // Imprime o número do caso de teste.
 //        (void)printf("Genome %u\n", casoTeste);
 //        // Lê a quantidade de consultas e escreve a resposta para cada uma delas.
-//        scanf("%u", &numConsultas);
+//        (void)scanf("%u", &numConsultas);
 //        while(numConsultas) {
-//            scanf("%u", &aux);
+//            (void)scanf("%u", &aux);
 //            for(i = 1; i <= numGenes; i++) {
 //                if(genes[i] == aux) {
 //                    (void)printf("%u\n", i);
@@ -92,7 +92,7 @@ int main(int argv, char** argc) {
 //            numConsultas--;
 //        }
 //        // Lê o tamanho da próxima instância.
-//        scanf("%u", &numGenes);
+//        (void)scanf("%u", &numGenes);
 //        casoTeste++;
 //    }
     return 0;

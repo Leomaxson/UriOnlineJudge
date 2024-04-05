@@ -16,7 +16,7 @@ int main(int argv, char** argc) {
 
     while(1) {
       // Lê o total de voluntários e zera o vetor até a posição.
-        scanf("%u", &totalVoluntarios);
+        (void)scanf("%u", &totalVoluntarios);
         if(feof(stdin)) {
             break;
         }
@@ -24,18 +24,18 @@ int main(int argv, char** argc) {
             voluntarios[voluntario] = 0;
         }
         // Lê o número de voluntários que retornaram e as placas deles.
-        scanf("%u", &numVoluntarios);
+        (void)scanf("%u", &numVoluntarios);
         if(numVoluntarios == totalVoluntarios) {
           // Se todos os voluntários retornaram, não precisa marcar quais voltaram.
             while(numVoluntarios) {
-                scanf("%*u");
+                (void)scanf("%*u");
                 numVoluntarios--;
             }
             (void)printf("*\n");
         } else {
           // Marca quais voltaram.
             while(numVoluntarios) {
-                scanf("%u", &voluntario);
+                (void)scanf("%u", &voluntario);
                 voluntarios[voluntario] = 1;
                 numVoluntarios--;
             }

@@ -16,7 +16,7 @@ int main(int argv, char** argc) {
     posicaoMaior = 0;
 
     for(i = 0; i < NUM_ENTRADAS; i++) {
-        scanf("%u", &valorLido);
+        (void)scanf("%u", &valorLido);
         if(valorLido > maior) {
             maior = valorLido;
             posicaoMaior = i;

@@ -12,9 +12,9 @@ int main(int argv, char** argc) {
     unsigned int i, operacoes, instancias;
     char aux;
 
-    scanf("%u", &instancias);
+    (void)scanf("%u", &instancias);
     while(instancias > 0) {
-        scanf("%s %s", stringA, stringB);
+        (void)scanf("%s %s", stringA, stringB);
         operacoes = 0;
         i = 0;
         while(stringA[i] != '\0') {

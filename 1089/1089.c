@@ -8,11 +8,11 @@ int main(int argv, char** argc) {
     unsigned int numAmostras, i, numPicos;
 
     // Lê o tamanho da primeira instância.
-    scanf("%u", &numAmostras);
+    (void)scanf("%u", &numAmostras);
     while(numAmostras) {
       // Lê as amostras.
         for(i = 0; i < numAmostras; i++) {
-            scanf("%d", &amostras[i]);
+            (void)scanf("%d", &amostras[i]);
         }
         // Prepara a execução.
         numPicos = 0;
@@ -33,7 +33,7 @@ int main(int argv, char** argc) {
         // Imprime a resposta.
         (void)printf("%u\n", numPicos);
         // Lê o tamanho da próxima instância.
-        scanf("%u", &numAmostras);
+        (void)scanf("%u", &numAmostras);
     }
     return 0;
 }

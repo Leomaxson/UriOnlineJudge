@@ -12,13 +12,13 @@ int main(int argv, char** argc) {
         instancias, verticeInicial, numVertices, numArestas, i, j, k;
 
       // Lê a quantidade de instâncias que deverão ser executadas.
-    scanf("%u", &instancias);
+    (void)scanf("%u", &instancias);
     while(instancias) {
       // Lê o vértice inicial.
-        scanf("%u", &verticeInicial);
+        (void)scanf("%u", &verticeInicial);
 
         // Lê a quantidade de vértices e arestas.
-        scanf("%u %u", &numVertices, &numArestas);
+        (void)scanf("%u %u", &numVertices, &numArestas);
 
         // Inicializa a matriz de adjacências e o vetor de cores.
         for(i = 0; i < numVertices; i++) {
@@ -31,7 +31,7 @@ int main(int argv, char** argc) {
 
         // Lê todas as arestas.
         while(numArestas) {
-            scanf("%u %u", &i, &j);
+            (void)scanf("%u %u", &i, &j);
             // Define a primeira adjacência.
             k = 0;
             while(k < numAdjacencias[i] && matrizAdjacencias[i][k] != j) {

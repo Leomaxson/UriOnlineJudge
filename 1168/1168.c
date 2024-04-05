@@ -14,9 +14,9 @@ int main(int argv, char** argc) {
     size_t tamanho_numero, i;
     char numero[TAMANHO];
 
-    scanf("%u", &instancias);
+    (void)scanf("%u", &instancias);
     while(instancias > 0) {
-        scanf("%s", &numero);
+        (void)scanf("%s", &numero);
         tamanho_numero = strlen(numero);
         num_leds = 0;
         for(i = 0; i < tamanho_numero; i++) {

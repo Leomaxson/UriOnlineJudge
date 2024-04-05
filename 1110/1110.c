@@ -44,7 +44,7 @@ int main(int argv, char** argc) {
     Fila fila, filaDescarte;
 
     // Lê a primeira instância.
-    scanf("%d", &tamanho);
+    (void)scanf("%d", &tamanho);
     while(tamanho > 0) {
       // Inicializa as filas.
         Fila_CriaInicializada(&fila, tamanho);
@@ -70,7 +70,7 @@ int main(int argv, char** argc) {
         carta = Fila_Desenfileira(&fila);
         (void)printf("Remaining card: %d\n", carta);
         // Busca o tamanho da próxima instância.
-        scanf("%d", &tamanho);
+        (void)scanf("%d", &tamanho);
     }
     return 0;
 }
