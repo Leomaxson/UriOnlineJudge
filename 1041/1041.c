@@ -8,34 +8,34 @@ Ler o ponto na entrada e tratar com ifs-elses cada um dos casos de quadrantes, e
 #include <stdio.h>
 
 int main() {
-  double x, y;
+    double x, y;
 
-  scanf("%lf", &x);
-  scanf("%lf", &y);
+    scanf("%lf", &x);
+    scanf("%lf", &y);
 
-  if(x > 0.0) {
-    if(y > 0.0) {
-      printf("Q1\n");
-    } else if(y < 0.0) {
-      printf("Q4\n");
+    if(x > 0.0) {
+        if(y > 0.0) {
+            printf("Q1\n");
+        } else if(y < 0.0) {
+            printf("Q4\n");
+        } else {
+            printf("Eixo X\n");
+        }
+    } else if(x < 0.0) {
+        if(y > 0.0) {
+            printf("Q2\n");
+        } else if(y < 0.0) {
+            printf("Q3\n");
+        } else {
+            printf("Eixo X\n");
+        }
     } else {
-      printf("Eixo X\n");
+        if(y == 0.0) {
+            printf("Origem\n");
+        } else {
+            printf("Eixo Y\n");
+        }
     }
-  } else if(x < 0.0) {
-    if(y > 0.0) {
-      printf("Q2\n");
-    } else if(y < 0.0) {
-      printf("Q3\n");
-    } else {
-      printf("Eixo X\n");
-    }
-  } else {
-    if(y == 0.0) {
-      printf("Origem\n");
-    } else {
-      printf("Eixo Y\n");
-    }
-  }
 
-  return 0;
+    return 0;
 }

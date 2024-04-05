@@ -4,13 +4,13 @@
 #define LIMITE 10000
 
 int main() {
-	unsigned int n, i;
+    unsigned int n, i;
 
-	scanf("%u", &n);
-	i = RESTO;
-	while (i < LIMITE) {
-		printf("%u\n", i);
-		i += n;
-	}
-	return 0;
+    scanf("%u", &n);
+    i = RESTO;
+    while(i < LIMITE) {
+        printf("%u\n", i);
+        i += n;
+    }
+    return 0;
 }

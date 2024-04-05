@@ -12,17 +12,17 @@
  * A word of an instance.
  */
 typedef struct SWord {
-  size_t Size;
-  char Text[MAX_WORD_SIZE + 1];
+    size_t Size;
+    char Text[MAX_WORD_SIZE + 1];
 } Word;
 
 /**
  * Represents a test case of the problem.
  */
 typedef struct STestCase {
-  int NumWords;
-  size_t MaxWordTam;
-  Word Words[MAX_NUM_OF_WORDS];
+    int NumWords;
+    size_t MaxWordTam;
+    Word Words[MAX_NUM_OF_WORDS];
 } TestCase;
 
 /**
@@ -30,13 +30,13 @@ typedef struct STestCase {
  * testCase Reference to the test case.
  */
 void TestCase_Read(TestCase *testCase) {
-  size_t i;
+    size_t i;
 
-  (void)scanf("%d", &testCase->NumWords);
-  for(i = 0; i < testCase->NumWords; i++) {
-    (void)scanf("%s", testCase->Words[i].Text);
-    testCase->Words[i].Size = strlen(testCase->Words[i].Text);
-  }
+    (void)scanf("%d", &testCase->NumWords);
+    for(i = 0; i < testCase->NumWords; i++) {
+        (void)scanf("%s", testCase->Words[i].Text);
+        testCase->Words[i].Size = strlen(testCase->Words[i].Text);
+    }
 }
 
 /**
@@ -44,36 +44,36 @@ void TestCase_Read(TestCase *testCase) {
  * testCase Reference to the test case.
  */
 void TestCase_Write(TestCase *testCase) {
-  int i;
+    int i;
 
-  for(i = 0; i < testCase->NumWords; i++) {
-    (void)printf("%*s\n", (int)testCase->MaxWordTam, testCase->Words[i].Text);
-  }
+    for(i = 0; i < testCase->NumWords; i++) {
+        (void)printf("%*s\n", (int)testCase->MaxWordTam, testCase->Words[i].Text);
+    }
 }
 
 void  TestCase_Process(TestCase *testCase) {
-  int i;
+    int i;
 
-  // Finds the largest word.
-  testCase->MaxWordTam = 0;
-  for(i = 0; i < testCase->NumWords; i++) {
-    if(testCase->Words[i].Size > testCase->MaxWordTam) {
-      testCase->MaxWordTam = testCase->Words[i].Size;
+    // Finds the largest word.
+    testCase->MaxWordTam = 0;
+    for(i = 0; i < testCase->NumWords; i++) {
+        if(testCase->Words[i].Size > testCase->MaxWordTam) {
+            testCase->MaxWordTam = testCase->Words[i].Size;
+        }
     }
-  }
 }
 
 int main(int argv, char** argc) {
-  TestCase t;
+    TestCase t;
 
-  TestCase_Read(&t);
-  while(t.NumWords > 0) {
-    TestCase_Process(&t);
-    TestCase_Write(&t);
     TestCase_Read(&t);
-    if(t.NumWords > 0) {
-      printf("\n");
+    while(t.NumWords > 0) {
+        TestCase_Process(&t);
+        TestCase_Write(&t);
+        TestCase_Read(&t);
+        if(t.NumWords > 0) {
+            printf("\n");
+        }
     }
-  }
-  return 0;
+    return 0;
 }

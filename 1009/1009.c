@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 // Percentage of bonus over sales.

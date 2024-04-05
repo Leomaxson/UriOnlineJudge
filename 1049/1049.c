@@ -29,101 +29,101 @@
 #define MINHOCA     (INVERTEBRADO + ANELIDEO + ONIVORO   )
 
 int getVertebradoFromString(const char *s) {
-  if(s == NULL) {
+    if(s == NULL) {
+        return INDEFINIDO;
+    }
+    if(strcmp(s, "vertebrado") == 0) {
+        return VERTEBRADO;
+    }
+    if(strcmp(s, "invertebrado") == 0) {
+        return INVERTEBRADO;
+    }
     return INDEFINIDO;
-  }
-  if(strcmp(s, "vertebrado") == 0) {
-    return VERTEBRADO;
-  }
-  if(strcmp(s, "invertebrado") == 0) {
-    return INVERTEBRADO;
-  }
-  return INDEFINIDO;
 }
 
 int getTipoFromString(const char *s) {
-  if(s == NULL) {
+    if(s == NULL) {
+        return INDEFINIDO;
+    }
+    if(strcmp(s, "ave") == 0) {
+        return AVE;
+    }
+    if(strcmp(s, "mamifero") == 0) {
+        return MAMIFERO;
+    }
+    if(strcmp(s, "inseto") == 0) {
+        return INSETO;
+    }
+    if(strcmp(s, "anelideo") == 0) {
+        return ANELIDEO;
+    }
     return INDEFINIDO;
-  }
-  if(strcmp(s, "ave") == 0) {
-    return AVE;
-  }
-  if(strcmp(s, "mamifero") == 0) {
-    return MAMIFERO;
-  }
-  if(strcmp(s, "inseto") == 0) {
-    return INSETO;
-  }
-  if(strcmp(s, "anelideo") == 0) {
-    return ANELIDEO;
-  }
-  return INDEFINIDO;
 }
 
 int getAlimentacaoFromString(const char *s) {
-  if(s == NULL) {
+    if(s == NULL) {
+        return INDEFINIDO;
+    }
+    if(strcmp(s, "carnivoro") == 0) {
+        return CARNIVORO;
+    }
+    if(strcmp(s, "onivoro") == 0) {
+        return ONIVORO;
+    }
+    if(strcmp(s, "herbivoro") == 0) {
+        return HERBIVORO;
+    }
+    if(strcmp(s, "hematofago") == 0) {
+        return HEMATOFAGO;
+    }
     return INDEFINIDO;
-  }
-  if(strcmp(s, "carnivoro") == 0) {
-    return CARNIVORO;
-  }
-  if(strcmp(s, "onivoro") == 0) {
-    return ONIVORO;
-  }
-  if(strcmp(s, "herbivoro") == 0) {
-    return HERBIVORO;
-  }
-  if(strcmp(s, "hematofago") == 0) {
-    return HEMATOFAGO;
-  }
-  return INDEFINIDO;
 }
 
 int getAnimalFromStrings(const char *vertebrado, const char *tipoAnimal, const char *alimentacao) {
-  return getVertebradoFromString(vertebrado) + 
-         getTipoFromString(tipoAnimal) + 
-         getAlimentacaoFromString(alimentacao);
+    return getVertebradoFromString(vertebrado) +
+        getTipoFromString(tipoAnimal) +
+        getAlimentacaoFromString(alimentacao);
 }
 
 void printAnimal(int animal) {
-  switch(animal) {
-    case AGUIA:
-      printf("aguia\n");
-      break;
-    case POMBA:
-      printf("pomba\n");
-      break;
-    case HOMEM:
-      printf("homem\n");
-      break;
-    case VACA:
-      printf("vaca\n");
-      break;
-    case PULGA:
-      printf("pulga\n");
-      break;
-    case LAGARTA:
-      printf("lagarta\n");
-      break;
-    case SANGUESSUGA:
-      printf("sanguessuga\n");
-      break;
-    case MINHOCA:
-      printf("minhoca\n");
-      break;
-    default:
-      printf("indefinido\n");
-  }
+    switch(animal) {
+        case AGUIA:
+            printf("aguia\n");
+            break;
+        case POMBA:
+            printf("pomba\n");
+            break;
+        case HOMEM:
+            printf("homem\n");
+            break;
+        case VACA:
+            printf("vaca\n");
+            break;
+        case PULGA:
+            printf("pulga\n");
+            break;
+        case LAGARTA:
+            printf("lagarta\n");
+            break;
+        case SANGUESSUGA:
+            printf("sanguessuga\n");
+            break;
+        case MINHOCA:
+            printf("minhoca\n");
+            break;
+        default:
+            printf("indefinido\n");
+    }
 }
 
 int main(int argv, char** argc) {
-  int animal;
-  char vertebrado[MAX_TAM_STRING];
-  char tipo[MAX_TAM_STRING];
-  char alimentacao[MAX_TAM_STRING];
+    int animal;
+    char vertebrado[MAX_TAM_STRING];
+    char tipo[MAX_TAM_STRING];
+    char alimentacao[MAX_TAM_STRING];
 
-  (void)scanf("%s %s %s", vertebrado, tipo, alimentacao);
-  animal = getAnimalFromStrings(vertebrado, tipo, alimentacao);
-  printAnimal(animal);
-  return 0;
+    (void)scanf("%s %s %s", vertebrado, tipo, alimentacao);
+    animal = getAnimalFromStrings(vertebrado, tipo, alimentacao);
+    printAnimal(animal);
+    return 0;
 }

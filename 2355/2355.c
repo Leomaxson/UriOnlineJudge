@@ -11,24 +11,24 @@ Basta calcular separadamente as frações inteiras e o resto do tempo dividido por
 #define DURACAO_PARTIDA (90)
 
 int main() {
-	unsigned int tempo, golsBrasil, golsAlemanha;
+    unsigned int tempo, golsBrasil, golsAlemanha;
 
-	// Lê a primeira instância.
-	scanf("%u", &tempo);
-	// Executa enquanto o tempo for diferente de zero.
-	while (tempo != 0) {
-		// Calcula o número de gols do Brasil, arredondado para baixo.
-		golsBrasil = tempo / DURACAO_PARTIDA;
-		// Calcula o número de gols da Alemanha, arredondado para cima.
-		tempo *= 7;
-		golsAlemanha = tempo / DURACAO_PARTIDA;
-		if (tempo % DURACAO_PARTIDA) {
-			golsAlemanha++;
-		}
-		// Imprime o resultado da instância.
-		printf("Brasil %u x Alemanha %u\n", golsBrasil, golsAlemanha);
-		// Lê o tempo da próxima instância.
-		scanf("%u", &tempo);
-	}
-	return 0;
+    // Lê a primeira instância.
+    scanf("%u", &tempo);
+    // Executa enquanto o tempo for diferente de zero.
+    while(tempo != 0) {
+        // Calcula o número de gols do Brasil, arredondado para baixo.
+        golsBrasil = tempo / DURACAO_PARTIDA;
+        // Calcula o número de gols da Alemanha, arredondado para cima.
+        tempo *= 7;
+        golsAlemanha = tempo / DURACAO_PARTIDA;
+        if(tempo % DURACAO_PARTIDA) {
+            golsAlemanha++;
+        }
+        // Imprime o resultado da instância.
+        printf("Brasil %u x Alemanha %u\n", golsBrasil, golsAlemanha);
+        // Lê o tempo da próxima instância.
+        scanf("%u", &tempo);
+    }
+    return 0;
 }

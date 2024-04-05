@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 #define WEIGHT_A (2.0)

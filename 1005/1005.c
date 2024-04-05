@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 #define WEIGHT_GRADE_A (3.5)

@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 #define TAM_ENTRADA (5)

@@ -22,48 +22,48 @@
 // 11: G
 
 int calculaIndice(char nota, char modificador) {
-  int indice;
+    int indice;
 
-  // Define o índice base da nota.
-  switch(nota) {
-    case 'A':
-      indice = 1;
-      break;
-    case 'B':
-      indice = 3;
-      break;
-    case 'C':
-      indice = 4;
-      break;
-    case 'D':
-      indice = 6;
-      break;
-    case 'E':
-      indice = 8;
-      break;
-    case 'F':
-      indice = 9;
-      break;
-    case 'G':
-      indice = 11;
-      break;
-    default:
-      return 0xffffffff;  // Erro de nota.
-  }
+    // Define o índice base da nota.
+    switch(nota) {
+        case 'A':
+            indice = 1;
+            break;
+        case 'B':
+            indice = 3;
+            break;
+        case 'C':
+            indice = 4;
+            break;
+        case 'D':
+            indice = 6;
+            break;
+        case 'E':
+            indice = 8;
+            break;
+        case 'F':
+            indice = 9;
+            break;
+        case 'G':
+            indice = 11;
+            break;
+        default:
+            return 0xffffffff;  // Erro de nota.
+    }
 
-  // Ajusta o modificador.
-  switch(modificador) {
-    case '#':  // Sustenido.
-      indice++;
-      break;
-    case 'b':  // Bemol
-      indice--;
-      break;
-    default:
-      break;
-  }
+    // Ajusta o modificador.
+    switch(modificador) {
+        case '#':  // Sustenido.
+            indice++;
+            break;
+        case 'b':  // Bemol
+            indice--;
+            break;
+        default:
+            break;
+    }
 
-  return indice % NUM_MEIOS_TONS;
+    return indice % NUM_MEIOS_TONS;
 }
 
 /**
@@ -72,11 +72,11 @@ int calculaIndice(char nota, char modificador) {
  * @param modificador Apontador para onde o modificador da nota será escrito.
  */
 void leNota(char *nota, char * modificador) {
-  char leitura[5];
+    char leitura[5];
 
-  scanf("%s", leitura);
-  *nota = leitura[0];
-  *modificador = leitura[1];
+    scanf("%s", leitura);
+    *nota = leitura[0];
+    *modificador = leitura[1];
 }
 
 /**
@@ -85,19 +85,19 @@ void leNota(char *nota, char * modificador) {
  * @param tamanho Tamanho do trecho que será lido da entrada padrão.
  */
 void leLinhaCalculaDeslocamentos(int *deslocamentos, int tamanho) {
-  char nota, modificador;
-  int i;
+    char nota, modificador;
+    int i;
 
-  leNota(&nota, &modificador);
-  deslocamentos[0] = calculaIndice(nota, modificador);
-  for(i = 1; i < tamanho; i++) {
     leNota(&nota, &modificador);
-    deslocamentos[i] = calculaIndice(nota, modificador);
-    deslocamentos[i - 1] = deslocamentos[i] - deslocamentos[i - 1];
-    if(deslocamentos[i - 1] < 0) {
-      deslocamentos[i - 1] += NUM_MEIOS_TONS;
+    deslocamentos[0] = calculaIndice(nota, modificador);
+    for(i = 1; i < tamanho; i++) {
+        leNota(&nota, &modificador);
+        deslocamentos[i] = calculaIndice(nota, modificador);
+        deslocamentos[i - 1] = deslocamentos[i] - deslocamentos[i - 1];
+        if(deslocamentos[i - 1] < 0) {
+            deslocamentos[i - 1] += NUM_MEIOS_TONS;
+        }
     }
-  }
 }
 
 /**
@@ -110,35 +110,35 @@ void leLinhaCalculaDeslocamentos(int *deslocamentos, int tamanho) {
 * @return Retorna o apontador para a ocorrência ou NULL se não achar.
 */
 int verificaPadrao(const int *musica, int tamanhoMusica, const int *trecho, int tamanhoTrecho) {
-  int deslocamentos[NUM_MEIOS_TONS], i, ultimo;
+    int deslocamentos[NUM_MEIOS_TONS], i, ultimo;
 
-  // Verifica as entradas antes de prosseguir com o algoritmo.
-  if((tamanhoTrecho == 0) || (musica == NULL) || (trecho == NULL)) {
-    return 0;
-  }
-  // Inicializa o vetor de deslocamentos do algoritmo de Boyer-Moore-Horspool para todos os 
-  // caracteres com o maior deslocamento que é o tamanho do trecho.
-  for(i = 0; i < NUM_MEIOS_TONS; i++) {
-    deslocamentos[i] = tamanhoTrecho;
-  }
-  // Para os deslocamentos presentes no trecho, calcula o deslocamento de cada um.
-  ultimo = tamanhoTrecho - 1;
-  for(i = 0; i < ultimo; i++) {
-    deslocamentos[trecho[i]] = ultimo - i;
-  }
-  // Tenta colidir todos os deslocamentos da música e do trecho, começando de trás para frente. Se 
-  // não houver colisão, é porque encontrou uma ocorrência. Se houver colisão, desloca a música de 
-  // acordo com o deslocamento dela que causou a colisão.
-  while(tamanhoMusica >= tamanhoTrecho) {
-    for(i = ultimo; musica[i] == trecho[i]; i--) {
-      if(i == 0) {
-        return 1;
-      }
+    // Verifica as entradas antes de prosseguir com o algoritmo.
+    if((tamanhoTrecho == 0) || (musica == NULL) || (trecho == NULL)) {
+        return 0;
     }
-    tamanhoMusica -= deslocamentos[musica[ultimo]];
-    musica += deslocamentos[musica[ultimo]];
-  }
-  return 0;
+    // Inicializa o vetor de deslocamentos do algoritmo de Boyer-Moore-Horspool para todos os 
+    // caracteres com o maior deslocamento que é o tamanho do trecho.
+    for(i = 0; i < NUM_MEIOS_TONS; i++) {
+        deslocamentos[i] = tamanhoTrecho;
+    }
+    // Para os deslocamentos presentes no trecho, calcula o deslocamento de cada um.
+    ultimo = tamanhoTrecho - 1;
+    for(i = 0; i < ultimo; i++) {
+        deslocamentos[trecho[i]] = ultimo - i;
+    }
+    // Tenta colidir todos os deslocamentos da música e do trecho, começando de trás para frente. Se 
+    // não houver colisão, é porque encontrou uma ocorrência. Se houver colisão, desloca a música de 
+    // acordo com o deslocamento dela que causou a colisão.
+    while(tamanhoMusica >= tamanhoTrecho) {
+        for(i = ultimo; musica[i] == trecho[i]; i--) {
+            if(i == 0) {
+                return 1;
+            }
+        }
+        tamanhoMusica -= deslocamentos[musica[ultimo]];
+        musica += deslocamentos[musica[ultimo]];
+    }
+    return 0;
 }
 
 /**
@@ -146,25 +146,25 @@ int verificaPadrao(const int *musica, int tamanhoMusica, const int *trecho, int 
 * @return Retorna sempre zero.
 */
 int main() {
-  int tamanhoMusica, tamanhoTrecho, musica[MUSICA_TAMANHO_MAX], trecho[TRECHO_TAMANHO_MAX], resultado;
+    int tamanhoMusica, tamanhoTrecho, musica[MUSICA_TAMANHO_MAX], trecho[TRECHO_TAMANHO_MAX], resultado;
 
-  // Lê os tamanhos da primeira instância.
-  scanf("%d %d", &tamanhoMusica, &tamanhoTrecho);
-  while(tamanhoMusica != 0 && tamanhoTrecho != 0) {
-    // Calcula os deslocamentos da música e do trecho.
-    leLinhaCalculaDeslocamentos(musica, tamanhoMusica);
-    tamanhoMusica--;
-    leLinhaCalculaDeslocamentos(trecho, tamanhoTrecho);
-    tamanhoTrecho--;
-    // Verifica se o padrão acontece na música.
-    resultado = verificaPadrao(musica, tamanhoMusica, trecho, tamanhoTrecho);
-    if(resultado) {
-      printf("S\n");
-    } else {
-      printf("N\n");
-    }
-    // Lê os tamanhos da próxima instância.
+    // Lê os tamanhos da primeira instância.
     scanf("%d %d", &tamanhoMusica, &tamanhoTrecho);
-  }
-  return 0;
+    while(tamanhoMusica != 0 && tamanhoTrecho != 0) {
+      // Calcula os deslocamentos da música e do trecho.
+        leLinhaCalculaDeslocamentos(musica, tamanhoMusica);
+        tamanhoMusica--;
+        leLinhaCalculaDeslocamentos(trecho, tamanhoTrecho);
+        tamanhoTrecho--;
+        // Verifica se o padrão acontece na música.
+        resultado = verificaPadrao(musica, tamanhoMusica, trecho, tamanhoTrecho);
+        if(resultado) {
+            printf("S\n");
+        } else {
+            printf("N\n");
+        }
+        // Lê os tamanhos da próxima instância.
+        scanf("%d %d", &tamanhoMusica, &tamanhoTrecho);
+    }
+    return 0;
 }

@@ -2,7 +2,7 @@
 Problema: Lendo Livros (URI-1542)
 Leonardo Maxson Bernardes Costa de Assis - 2014043110
 
-Leio os números de páginas/dia e a diferença em dias para cada entrada. Calculo o número de 
+Leio os números de páginas/dia e a diferença em dias para cada entrada. Calculo o número de
 páginas para cada instância de acordo com a fórmula que relaciona as variáveis:
 
 X = Número de páginas do livro.
@@ -16,21 +16,21 @@ X = (D x Q x P) / (P - Q)
 #include <stdio.h>
 
 int main() {
-  unsigned int x, d, q, p;
+    unsigned int x, d, q, p;
 
-  while(1) {
-    scanf("%u", &q);
-    if(q == 0) {
-      break;
+    while(1) {
+        scanf("%u", &q);
+        if(q == 0) {
+            break;
+        }
+        scanf("%u", &d);
+        scanf("%u", &p);
+        x = (d * q * p) / (p - q);
+        if(x == 1) {
+            printf("1 pagina\n");
+        } else {
+            printf("%u paginas\n", x);
+        }
     }
-    scanf("%u", &d);
-    scanf("%u", &p);
-    x = (d * q * p) / (p - q);
-    if(x == 1) {
-      printf("1 pagina\n");
-    } else {
-      printf("%u paginas\n", x);
-    }
-  }
-  return 0;
+    return 0;
 }
