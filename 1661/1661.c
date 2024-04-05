@@ -10,13 +10,13 @@ int main(int argv, char** argc) {
     instancia = 1;
     in = fopen("teste.txt", "r");
     while(instancia) {
-        fscanf(in, "%d", &numHabitantes);
+        (void)fscanf(in, "%d", &numHabitantes);
         // (void)scanf("%d", &numHabitantes);
         if(numHabitantes) {
             trabalho = 0;
             estado = 0;
             while(numHabitantes) {
-                fscanf(in, "%d", &compras);
+                (void)fscanf(in, "%d", &compras);
                 // (void)scanf("%d", &compras);
                 estado += compras;
                 if(estado > 0) {
@@ -26,7 +26,7 @@ int main(int argv, char** argc) {
                 }
                 numHabitantes--;
             }
-            (void)printf("%d\n", trabalho);
+            (void)printf("%lld\n", trabalho);
         } else {
             instancia = 0;
         }
