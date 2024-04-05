@@ -4,7 +4,7 @@
 
 #define MAX_PALAVRA (70 + 1)
 
-int main() {
+int main(int argv, char** argc) {
     char palavra[MAX_PALAVRA];
     size_t numPalavras, maxLinhasPagina, maxCharsLinha, numCharsLinhaAtual, numLinhasPaginaAtual, numPaginas, tamPalavra;
 

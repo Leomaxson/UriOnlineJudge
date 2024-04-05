@@ -39,7 +39,7 @@ int Fila_Desenfileira(Fila * fila) {
     return item;
 }
 
-int main() {
+int main(int argv, char** argc) {
     int tamanho, carta;
     Fila fila, filaDescarte;
 

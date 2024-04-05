@@ -7,7 +7,7 @@ int Compara(const void * a, const void * b) {
     return (*(int*)b - *(int*)a);
 }
 
-int main() {
+int main(int argv, char** argc) {
     int fila1[MAX_TAM], fila2[MAX_TAM], numInstancias, tamanhoFila, numElementosNaoTrocados, i;
 
     // Lê o número de instâncias.

@@ -7,7 +7,7 @@ Leio os dois números e faço o cálculo em uma variáveis long long unsigned int pa
 
 #include <stdio.h>
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int num;
     long long unsigned int fat1, fat2;
 

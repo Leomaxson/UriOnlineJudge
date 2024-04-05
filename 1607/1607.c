@@ -7,7 +7,7 @@
 * Ponto de entrada para o programa.
 * @return Retorna sempre zero.
 */
-int main() {
+int main(int argv, char** argc) {
     char stringA[TAMANHO], stringB[TAMANHO];
     unsigned int i, operacoes, instancias;
     char aux;

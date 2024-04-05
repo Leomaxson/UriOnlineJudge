@@ -27,7 +27,7 @@ int problemaMochila(int capacidade, int pesos[], int lucros[], int numItens) {
     return mochila[numItens][capacidade];
 }
 
-int main() {
+int main(int argv, char** argc) {
     int numPedidos, maxPizzas, numPizzas[MAX_PEDIDOS], tempoEntrega[MAX_PEDIDOS], i;
 
     // Lê o tamanho da primeira instância.

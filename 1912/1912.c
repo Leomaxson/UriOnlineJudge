@@ -7,7 +7,7 @@ int Compara(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);
 }
 
-int main() {
+int main(int argv, char** argc) {
     int tiras[MAX_TIRAS], numTiras, areaEsperada, areaTotal, areaAtual, areaSecao, alturaCorte, i;
     double alturaCortePrecisa;
 

@@ -83,7 +83,7 @@ unsigned int posicaoValida(Posicao p) {
     return 0;
 }
 
-int main() {
+int main(int argv, char** argc) {
     int tabuleiro[TAM_TABULEIRO][TAM_TABULEIRO];
     char inicio[TAM_STRING_MOVIMENTO], termino[TAM_STRING_MOVIMENTO];
     Posicao movimentos[TAM_TABULEIRO], posInicio, posTermino, pos, mov;

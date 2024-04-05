@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main() {
+int main(int argv, char** argc) {
     int numLinhas;
 
     // Lê o tamanho da primeira instância.

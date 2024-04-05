@@ -11,7 +11,7 @@ int NormalizaComponente(int componentes[MAX_VERTICES], int i) {
     return componentes[i];
 }
 
-int main() {
+int main(int argv, char** argc) {
     int numInstancias, instancia, numVertices, numArestas, componentes[MAX_VERTICES], lidos[MAX_VERTICES], numLidos, i, numComponentes, vertice;
     char v1, v2;
 

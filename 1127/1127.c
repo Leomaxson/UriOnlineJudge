@@ -145,7 +145,7 @@ int verificaPadrao(const int *musica, int tamanhoMusica, const int *trecho, int 
 * Ponto de entrada para o programa.
 * @return Retorna sempre zero.
 */
-int main() {
+int main(int argv, char** argc) {
     int tamanhoMusica, tamanhoTrecho, musica[MUSICA_TAMANHO_MAX], trecho[TRECHO_TAMANHO_MAX], resultado;
 
     // Lê os tamanhos da primeira instância.

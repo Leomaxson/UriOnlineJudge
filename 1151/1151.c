@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int num_termos, fib, fib_ant, fib_ant_ant;
 
     // Lê número de termos para calcular.

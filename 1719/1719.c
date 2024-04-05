@@ -30,7 +30,7 @@ unsigned char ConverteStringInstrucao(char leitura[TAMANHO_INSTRUCAO + 1]) {
  * instância por vez.
  * @return Retorna sempre zero.
  */
-int main() {
+int main(int argv, char** argc) {
     Processador p;
     unsigned char instrucao, posicaoMemoria, i;
     char leitura[TAMANHO_INSTRUCAO + 1];

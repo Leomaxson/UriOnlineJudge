@@ -2,7 +2,7 @@
 
 #define MULTIPLO 13
 
-int main() {
+int main(int argv, char** argc) {
     int x, y, contagem;
 
     // Lê os valores de X e Y.

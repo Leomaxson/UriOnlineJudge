@@ -9,7 +9,7 @@ agora. Se for, guarda o valor dele e sua posição.
 #include <stdio.h>
 #define NUM_ENTRADAS 100
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int maior, posicaoMaior, i, valorLido;
 
     maior = 0;

@@ -3,7 +3,7 @@
 
 #define MAX_INGREDIENTES (100)
 
-int main() {
+int main(int argv, char** argc) {
     int numInstancias, dinheiro, i, numIngredientesReceita, ingrediente, quantidade, maxBolos, numBolos;
     int numIngredientes, precosIngredientes[MAX_INGREDIENTES], numReceitas, precoReceita;
 

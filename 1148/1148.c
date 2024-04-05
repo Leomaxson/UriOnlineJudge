@@ -52,7 +52,7 @@ int dijkstra(int **grafo, int origem, int destino, int numVertices) {
     return retorno;
 }
 
-int main() {
+int main(int argv, char** argc) {
     int ** grafo, numVertices, numArestas, i, j, peso, pesquisas;
 
     // Lê o tamanho da instância e verifica a condição de saída.

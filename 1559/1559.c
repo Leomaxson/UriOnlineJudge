@@ -16,7 +16,7 @@ No caso dos blocos iguais lado-a-lado, cada conjunto permite que se mova em um e
 #define STR_UP    "UP"
 #define STR_NONE  "NONE"
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int quadro[TAM_QUADRO][TAM_QUADRO], numInstancias, down, left, right, up, i, j, flag;
     char *str[TAM_QUADRO];
 

@@ -25,7 +25,7 @@ int resolveMochilaIlimitada(int capacidade, int numItens, int lucroItens[], int 
 }
 
 // main
-int main() {
+int main(int argv, char** argc) {
     int instancia, numAtracoes, tempoDisponivel, i, pontuacao;
     int tempoAtracoes[MAX_ATRACOES], pontosAtracoes[MAX_ATRACOES];
 

@@ -3,7 +3,7 @@
 
 #define DURACAO_PARTIDA (90)
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int numPinos, resposta, i;
 
     while(1) {

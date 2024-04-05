@@ -13,7 +13,7 @@ Cada permutação incrementa o contador.
 
 #define MAX_PILOTOS 24
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int ordemLargada[MAX_PILOTOS], ordemChegada[MAX_PILOTOS];
     unsigned int numPilotos, i, j, numUltrapassagens, pilotoAtual;
 

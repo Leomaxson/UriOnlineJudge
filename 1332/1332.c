@@ -7,7 +7,7 @@
 * Ponto de entrada para o programa.
 * @return Retorna sempre zero.
 */
-int main() {
+int main(int argv, char** argc) {
     char string[TAMANHO_MAX];
     unsigned int instancias;
     unsigned char one;

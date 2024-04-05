@@ -3,7 +3,7 @@
 
 #define TAMANHO_BUFFER (5)
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int numInstancias, min, max, i, tamNum, j;
     char buffer[TAMANHO_BUFFER + 1], aux;
 

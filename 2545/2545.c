@@ -78,7 +78,7 @@ unsigned int Grafo_PossuiCiclo(Grafo * g) {
     return 0;
 }
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int numVertices, numArestas, i, j, nivel;
     Grafo g;
 

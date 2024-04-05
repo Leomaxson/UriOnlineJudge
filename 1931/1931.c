@@ -138,7 +138,7 @@ int Dijkstra(Grafo *grafo) {
     return dist;
 }
 
-int main() {
+int main(int argv, char** argc) {
     Grafo *grafo, *grafoOriginal;
     int numVertices, numArestas, v1, v2, peso;
 

@@ -42,7 +42,7 @@ int contabilizaFlorestas(int numCidades, unsigned char pontes[MAX_CIDADES][MAX_C
     return florestas;
 }
 
-int main() {
+int main(int argv, char** argc) {
     unsigned char pontes[MAX_CIDADES][MAX_CIDADES];
     int numCidades, numPontes, numFlorestas, numFlorestasAnterior, i, j;
     FILE * entrada;

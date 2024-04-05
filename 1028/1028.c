@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int numInstancias, num1, num2, resto;
 
     // Lê o número de instâncias.

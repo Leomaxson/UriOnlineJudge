@@ -8,7 +8,7 @@
 #define TAM_TEXTO (100 + 2)
 #define TAM_SAIDA (400 + 1)
 
-int main() {
+int main(int argv, char** argc) {
     char tag[TAM_TAG], subst[TAM_SUBST], textoOriginal[TAM_TEXTO], texto[TAM_TEXTO], saida[TAM_SAIDA];
     char *ptrTextoOriginal, *ptrTexto, *ptrSaida, *ptrTag;
     size_t tamanhoTag, tamanhoSubst, tamanhoTexto, i, cont;

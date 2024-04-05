@@ -3,7 +3,7 @@
 
 #define MAX_TAM 10000
 
-int main() {
+int main(int argv, char** argc) {
     int amostras[MAX_TAM], diferenca, diferencaAnterior, diferencaLoop;
     unsigned int numAmostras, i, numPicos;
 

@@ -3,7 +3,7 @@
 #define RESTO 2
 #define LIMITE 10000
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int n, i;
 
     scanf("%u", &n);

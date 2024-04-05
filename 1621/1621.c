@@ -54,7 +54,7 @@ Item Fila_Desenfilera(Fila * fila) {
 }
 
 
-int main() {
+int main(int argv, char** argc) {
     int numLinhas, numColunas, i, j, trocouMax, maiorDistancia;
     char ** labirinto;
     Item item, itemAnt, itemMax;

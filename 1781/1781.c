@@ -68,7 +68,7 @@ void montaString(char * vogais, char * consoantes, char * saida,
     saida[tamString] = '\0';
 }
 
-int main(void) {
+int main(int argv, char** argc) {
     char string1[MAX_LENGTH], string2[MAX_LENGTH], string3[MAX_LENGTH];
     char * vogais, *consoantes, *buffer, *aux;
     unsigned int indicesVogais[MAX_LENGTH];

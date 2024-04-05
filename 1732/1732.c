@@ -8,7 +8,7 @@ typedef struct STupla {
     int Y;
 } Tupla;
 
-int main() {
+int main(int argv, char** argc) {
     int x, y, n, i, limite, instancia;
     Tupla * colmeia;
 

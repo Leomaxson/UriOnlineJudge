@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int num_jogadas, joao[10000], maria[10000], instancias, i, valor;
 
     instancias = 0;

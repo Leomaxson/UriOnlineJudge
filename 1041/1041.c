@@ -7,7 +7,7 @@ Ler o ponto na entrada e tratar com ifs-elses cada um dos casos de quadrantes, e
 
 #include <stdio.h>
 
-int main() {
+int main(int argv, char** argc) {
     double x, y;
 
     scanf("%lf", &x);
@@ -36,6 +36,5 @@ int main() {
             printf("Eixo Y\n");
         }
     }
-
     return 0;
 }

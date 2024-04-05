@@ -15,7 +15,7 @@ X = (D x Q x P) / (P - Q)
 
 #include <stdio.h>
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int x, d, q, p;
 
     while(1) {

@@ -73,7 +73,7 @@ Fracao Fracao_Divide(Fracao f1, Fracao f2) {
     return resultado;
 }
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int numInstancias;
     Fracao f1, f2;
     char op;

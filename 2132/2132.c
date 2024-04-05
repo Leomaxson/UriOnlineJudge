@@ -4,7 +4,7 @@
 
 #define TAM_STRING (60)
 
-int main() {
+int main(int argv, char** argc) {
     char string[TAM_STRING + 1];
     long long int resp, test, tam, i;
 

@@ -4,7 +4,7 @@
 #define MAX_TAM (1000 + 1)
 #define NUM_CHARS (256)
 
-int main() {
+int main(int argv, char** argc) {
     char palavra[MAX_TAM];
     unsigned int cont[NUM_CHARS], i, numImpares;
 

@@ -6,7 +6,7 @@
 #define MAX_VERTICES MATRIZ_MAX_LINHAS * MATRIZ_MAX_LINHAS
 #define GRAU_MAXIMO 4
 
-int main() {
+int main(int argv, char** argc) {
   // Cores corVertice[MAX_VERTICES];
     unsigned int matrizAdjacencias[MAX_VERTICES][GRAU_MAXIMO], numAdjacencias[MAX_VERTICES],
         instancias, verticeInicial, numVertices, numArestas, i, j, k;

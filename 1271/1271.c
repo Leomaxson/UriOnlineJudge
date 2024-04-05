@@ -2,7 +2,7 @@
 
 #define MAX_GENES 50001  // Adicionei uma posição pois todos os índices começam com 1.
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int numGenes, numConsultas, casoTeste, numInversoes, i, j, aux, genes[MAX_GENES];
 
     // Lê o tamanho da primeira instância para começar o algoritmo.

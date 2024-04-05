@@ -19,7 +19,7 @@ typedef struct SPonto {
     int Y;
 } Ponto;
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int numPretos, numBrancos, i, j, k, l, result;
     Ponto pretos[MAX_PONTOS], brancos[MAX_PONTOS];
     unsigned long long energiaTotal, numPontosInternos;

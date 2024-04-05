@@ -88,7 +88,7 @@ double CalculaTamanhoAGM(Grafo *grafo) {
     return custoTotal;
 }
 
-int main() {
+int main(int argv, char** argc) {
     int numInstancias, numPessoas, i, j, *posX, *posY, xAux, yAux, indiceAresta;
     Grafo grafo;
 

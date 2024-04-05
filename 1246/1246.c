@@ -2,7 +2,7 @@
 
 #define VAGA_VAZIA 0
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int tamanhoEstacionamento, i, faturamento, placa, numRegistros;
     unsigned char tamanhoVeiculo, espaco;
     char registro;

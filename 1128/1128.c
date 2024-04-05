@@ -96,7 +96,7 @@ void Grafo_Transpor(Grafo * g) {
     }
 }
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int numVertices, numArestas, i, v1, v2, param;
     Grafo g;
 

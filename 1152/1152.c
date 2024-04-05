@@ -51,7 +51,7 @@ void mesclaVertices(int vertices[], int numVertices, int referencia, int vertice
     }
 }
 
-int main() {
+int main(int argv, char** argc) {
     int numVertices, numArestas, i, tamFloresta, pesoTotal, pesoAGM, *vertices;
     Aresta * arestas;
 

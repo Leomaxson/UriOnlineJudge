@@ -10,7 +10,7 @@ retornou. Para determinar quem não retornou, percorro novamente o vetor.
 
 #define MAX_VOLUNTARIOS 10000 + 1
 
-int main() {
+int main(int argv, char** argc) {
     unsigned char voluntarios[MAX_VOLUNTARIOS];
     unsigned int numVoluntarios, totalVoluntarios, voluntario;
 

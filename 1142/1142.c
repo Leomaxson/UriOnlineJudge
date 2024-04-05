@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int num_linhas, a, b, c;
 
     // Lê o número de linhas para imprimir.

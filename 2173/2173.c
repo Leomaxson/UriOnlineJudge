@@ -54,7 +54,7 @@ int calculaPesoAGM(int **grafo, int numVertices) {
     return distanciaTotal;
 }
 
-int main() {
+int main(int argv, char** argc) {
     int **grafo, numVertices, numArestas, v1, v2, peso, pesoAGMaxima, i, j;
 
     // Lê a instância e trata o caso de saída.

@@ -34,7 +34,7 @@ void navegaArvoreBusca(ControleArvoreBusca * controle, int inicioBusca) {
     }
 }
 
-int main() {
+int main(int argv, char** argc) {
     int i;
     ControleArvoreBusca controle;
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(int argv, char** argc) {
     char instancia;
     int numHabitantes, compras;
     long long trabalho, estado;

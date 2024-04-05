@@ -2,7 +2,7 @@
 
 #define MAX_DIGITOS 100000
 
-int main() {
+int main(int argv, char** argc) {
     int d, n, i, j, pos;
     char numero[MAX_DIGITOS + 1], digito, encontrou;
 

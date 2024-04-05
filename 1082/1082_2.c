@@ -33,7 +33,7 @@ void ImprimeComponente(unsigned char vertices[MAX_VERTICES][MAX_VERTICES], unsig
     printf("\n");
 }
 
-int main() {
+int main(int argv, char** argc) {
     unsigned char vertices[MAX_VERTICES][MAX_VERTICES], componentes[MAX_VERTICES];
     unsigned int numCasosTeste, casoTeste, numVertices, numArestas, i, j, componente1, componente2, numComponentes;
     char vertice1, vertice2;

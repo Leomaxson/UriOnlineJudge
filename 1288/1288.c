@@ -35,7 +35,7 @@ int problemaMochila(int capacidade, int pesos[], int lucros[], int numItens) {
     return retorno;
 }
 
-int main() {
+int main(int argv, char** argc) {
     int numProjeteis, capacidadeCanhao, resistenciaCastelo, numInstancias, i, resultado;
     int *pesosProjeteis, *danosProjeteis;
 

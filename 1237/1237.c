@@ -51,7 +51,7 @@ const unsigned char *boyer_moore_horspool(const unsigned char *texto, size_t tam
  * Ponto de entrada para o programa.
  * @return Retorna sempre zero.
  */
-int main() {
+int main(int argv, char** argc) {
     unsigned char *texto, *padrao, *aux;
     size_t tamanho_texto, tamanho_padrao, tamanho_aux, i, j;
     unsigned char maior_substring, instancia;

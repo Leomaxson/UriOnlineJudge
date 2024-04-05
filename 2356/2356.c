@@ -43,7 +43,7 @@ unsigned char verificaPadrao(const unsigned char *texto, unsigned char tamanhoTe
     return 0;
 }
 
-int main() {
+int main(int argv, char** argc) {
     char DNA[MAX_TAM + 1], padrao[MAX_TAM + 1];
     unsigned char tamanhoDNA, tamanhoPadrao, result;
 

@@ -109,7 +109,7 @@ unsigned int FilaPrioridade_Retira(PTLista lista) {
 * Ponto de entrada para o programa.
 * @return Retorna sempre zero.
 */
-int main() {
+int main(int argv, char** argc) {
     Lista pilha, fila, filaPrioridade;
     unsigned int numOperacoes, operacao, elemento, retirado;
     unsigned char pilhaValida, filaValida, filaPrioridadeValida;

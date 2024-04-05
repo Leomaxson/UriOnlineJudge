@@ -11,7 +11,7 @@
 * Ponto de entrada para o programa.
 * @return Retorna sempre zero.
 */
-int main() {
+int main(int argv, char** argc) {
     char texto[TAMANHO_MAXIMO];
     unsigned char letras[26], i, j, primeiro;
 

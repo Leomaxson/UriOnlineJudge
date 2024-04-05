@@ -89,7 +89,7 @@ int calculaDificuldade(char comprimentoTotal, char numPalavras) {
  * Ponto de entrada para o programa.
  * @return Retorna sempre zero.
  */
-int main() {
+int main(int argv, char** argc) {
   // FILE *entrada;
     char enunciado[TAMANHO_MAXIMO_ENUNCIADO], aux, comprimentoTotal, numPalavras, posicao, posicaoFimSimbolo;
 

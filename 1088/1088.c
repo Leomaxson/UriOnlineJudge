@@ -59,7 +59,7 @@ unsigned int mergeSort(unsigned int vetor[], unsigned int comeco, unsigned int f
     return inversoes;
 }
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int tamanho, inversoes, i, sequencia[100000];
     // unsigned int *sequencia;
 

@@ -67,7 +67,7 @@ int BuscaEmoticonsLinha(Entrada *entrada, Intervalo *intervalos, int linha) {
     return numIntervalos;
 }
 
-int main() {
+int main(int argv, char** argc) {
     int numIntervalos, numSubstituicoes, i, j, ultimaSubst;
     Entrada entrada;
     Intervalo intervalos[MAX_INTERVALOS];

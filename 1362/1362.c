@@ -58,7 +58,7 @@ unsigned int tentaCasar(unsigned int numCamisas,
     return 0;
 }
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int numInstancias, numCamisas, numVoluntarios, i, retorno;
     unsigned int tamanho1[MAX_VOLUNTARIOS], tamanho2[MAX_VOLUNTARIOS], contTamanhos[NUM_TAMANHOS];
     char strTamanho1[MAX_STR_TAMANHO], strTamanho2[MAX_STR_TAMANHO];

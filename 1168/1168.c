@@ -9,7 +9,7 @@
 * Ponto de entrada para o programa.
 * @return Retorna sempre zero.
 */
-int main() {
+int main(int argv, char** argc) {
     unsigned int instancias, num_leds;
     size_t tamanho_numero, i;
     char numero[TAMANHO];

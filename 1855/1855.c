@@ -2,7 +2,7 @@
 
 #define MAX_TAM 100
 
-int main() {
+int main(int argv, char** argc) {
     char mapa[MAX_TAM][MAX_TAM], c;
     int numLinhas, numColunas, i, j;
 

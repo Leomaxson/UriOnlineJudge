@@ -4,7 +4,7 @@
 
 #define MAX_SENTENCA (60)
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int i, maiuscula;
     char sentenca[MAX_SENTENCA];
 

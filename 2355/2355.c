@@ -10,7 +10,7 @@ Basta calcular separadamente as frações inteiras e o resto do tempo dividido por
 
 #define DURACAO_PARTIDA (90)
 
-int main() {
+int main(int argv, char** argc) {
     unsigned int tempo, golsBrasil, golsAlemanha;
 
     // Lê a primeira instância.

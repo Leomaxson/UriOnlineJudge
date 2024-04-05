@@ -18,7 +18,7 @@ void decrementa(int *A, int tam, int i) {
 }
 
 
-int main() {
+int main(int argv, char** argc) {
   //int *vetor, tamVetor, numero, i, j;
 
   //// Lê o tamanho do vetor e inicializa ele.

@@ -8,7 +8,7 @@
 * Ponto de entrada para o programa.
 * @return Retorna sempre zero.
 */
-int main() {
+int main(int argv, char** argc) {
     unsigned int instancias;
     unsigned int numEnderecos, numChaves, chave, endereco, i, j;
     unsigned int hash[MAX_ENDERECOS][MAX_CHAVES + 1];
