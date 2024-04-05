@@ -77,7 +77,6 @@ void Grafo_UneArestas(Grafo *grafoOriginal, Grafo *grafo) {
   }
 }
 
-
 int Dijkstra(Grafo *grafo) {
   int *distancias, *restantes, numRestantes, i, vertice, dist;
   char *restantesCompleto;
@@ -138,7 +137,6 @@ int Dijkstra(Grafo *grafo) {
   }
   return dist;
 }
-
 
 int main() {
   Grafo *grafo, *grafoOriginal;
