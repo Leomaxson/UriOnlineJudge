@@ -10,13 +10,13 @@
  * @return Returns the radius of the sphere.
  */
 double sphereVolume(double radius) {
-  return 4.0 / 3.0 * PI * radius * radius * radius;
+    return 4.0 / 3.0 * PI * radius * radius * radius;
 }
 
 int main(int argv, char** argc) {
-  double radius;
+    double radius;
 
-  (void)scanf("%lf", &radius);
-  (void)printf("VOLUME = %.3f\n", sphereVolume(radius));
-  return 0;
+    (void)scanf("%lf", &radius);
+    (void)printf("VOLUME = %.3f\n", sphereVolume(radius));
+    return 0;
 }

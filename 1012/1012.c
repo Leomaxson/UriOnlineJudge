@@ -11,7 +11,7 @@
  * @return Returns the area of the rectangled triangle.
  */
 double rectangledTriangleArea(double base, double height) {
-  return base * height / 2.0;
+    return base * height / 2.0;
 }
 
 /**
@@ -20,7 +20,7 @@ double rectangledTriangleArea(double base, double height) {
  * @return Returns the area of the circle.
  */
 double circleArea(double radius) {
-  return PI * radius * radius;
+    return PI * radius * radius;
 }
 
 /**
@@ -31,7 +31,7 @@ double circleArea(double radius) {
  * @return Returns the area of the trapezium.
  */
 double trapeziumArea(double baseA, double baseB, double height) {
-  return (baseA + baseB) * height / 2.0;
+    return (baseA + baseB) * height / 2.0;
 }
 
 /**
@@ -40,7 +40,7 @@ double trapeziumArea(double baseA, double baseB, double height) {
  * @return Returns the area of the square.
  */
 double squareArea(double side) {
-  return side * side;
+    return side * side;
 }
 
 /**
@@ -50,17 +50,17 @@ double squareArea(double side) {
  * @return Returns the area of the rectangle.
  */
 double rectangleArea(double sideA, double sideB) {
-  return sideA * sideB;
+    return sideA * sideB;
 }
 
 int main(int argv, char** argc) {
-  double a, b, c;
+    double a, b, c;
 
-  (void)scanf("%lf %lf %lf", &a, &b, &c);
-  (void)printf("TRIANGULO: %.3f\n", rectangledTriangleArea(a, c));
-  (void)printf("CIRCULO: %.3f\n",   circleArea(c));
-  (void)printf("TRAPEZIO: %.3f\n",  trapeziumArea(a, b, c));
-  (void)printf("QUADRADO: %.3f\n",  squareArea(b));
-  (void)printf("RETANGULO: %.3f\n", rectangleArea(a, b));
-  return 0;
+    (void)scanf("%lf %lf %lf", &a, &b, &c);
+    (void)printf("TRIANGULO: %.3f\n", rectangledTriangleArea(a, c));
+    (void)printf("CIRCULO: %.3f\n", circleArea(c));
+    (void)printf("TRAPEZIO: %.3f\n", trapeziumArea(a, b, c));
+    (void)printf("QUADRADO: %.3f\n", squareArea(b));
+    (void)printf("RETANGULO: %.3f\n", rectangleArea(a, b));
+    return 0;
 }

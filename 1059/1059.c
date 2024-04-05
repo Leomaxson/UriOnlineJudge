@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 int main(int argv, char** argc) {
-    int a, b;
+    unsigned int i;
 
-    (void)scanf("%d %d", &a, &b);
-    (void)printf("PROD = %d\n", a * b);
+    for (i = 2; i <= 100; i += 2) {
+        printf("%u\n", i);
+    }
     return 0;
 }
